@@ -1,0 +1,52 @@
+body { 
+    background: linear-gradient(180deg, #1f2444 28.13%, #2e265f 72.4%, #3e2f4d 94.79%);
+    background-size: 100vw, 100vh;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#content-1 {
+    margin-top: 1.25vw;
+    display: flex;
+    align-content: space-between;
+}
+
+#player {
+    width: 55vw;
+    height:35vw;
+    border-radius: 1.25vw;
+    -moz-border-radius: 1.25vw;
+    -webkit-border-radius: 1.25vw;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#info {
+    width: 25vw;
+    padding: 2vw;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.76vw;
+}
+
+p, a {
+    margin-top: 0.25vw;
+}
+
+.desc-items {
+    margin-top: 3.64vw;
+}
+
+#content-2 {
+    margin-top: 3.13vw;
+}
+
+#description {
+    margin-top: 1vw;
+}

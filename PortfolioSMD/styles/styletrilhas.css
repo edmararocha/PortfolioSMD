@@ -1,0 +1,61 @@
+body{
+    background-color: var(--lightgrey);
+    background-image: url(../source/bgtrilhas.png);
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+.gridtrilhas{
+    min-width: 98vw;
+    height: 55.13vw;
+    max-height: 55.13vw;
+    display: grid;
+    grid-template-columns: repeat(12, 8.22vw);
+    grid-template-rows:repeat(5, 1fr);
+}
+
+#corujatrilhas{
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin-top: 11vw;
+    margin-left: 1.17vw; 
+}
+#corujatrilhas > img{
+    min-width: 22.1vw;
+    max-width: 22.1vw;
+    
+}
+#balaotrilhas{
+    font-family: 'Montserrat', sans-serif;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    margin-top: 2.35vw;
+    margin-left: 3.62vw;
+    width: 38.69vw;
+}
+
+#balaotrilhas > img{
+    width: 38.69vw;
+}
+#balaotrilhas > h1{
+    font-size: 3.88vw;
+    margin-left: 7.86vw;
+    margin-top: -24.35vw;
+    padding-bottom: 3.27vw;
+    font-weight: 600;
+}
+#balaotrilhas > p{
+    font-size: 1.63vw;
+    width: 30.83vw;
+    text-align: left;
+    margin-left: 3.27vw;
+}
+
+#balaotrilhas > #select{
+    margin-left: 5.97vw;
+    margin-top: 2.50vw;
+}
