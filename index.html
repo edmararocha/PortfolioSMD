@@ -13,21 +13,20 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Rubik:wght@500&family=Staatliches&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/home.css">
-  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="stylesheet" href="./src/styles/home.css">
+  <script src="/src/scripts/script.js" defer></script>
 </head>
 
 <body>
   <header>
     <nav class="global-nav">
-      <div class="logo-content"><a href="../index.html"><img src="./source/smd.png" alt="logo do SMD"
-            id="smd-logo"></a></div>
+      <div class="logo-content"><a href="#"><img src="./src/source/smd.png" alt="logo do SMD" id="smd-logo"></a></div>
       <ul class="global-menu-content">
         <ul class="global-menu">
-          <li class="global-menu-item" alt="projetos"><a href="./views/projects.html">PROJETOS</a></li>
-          <li class="global-menu-item" alt="egressos"><a href="./views/graduates.html">EGRESSOS</a></li>
-          <li class="global-menu-item" alt="trilhas"><a href="./views/trails.html">TRILHAS</a></li>
+          <li class="global-menu-item" alt="projetos"><a href="./src/views/projects.html">PROJETOS</a></li>
+          <li class="global-menu-item" alt="egressos"><a href="./src/views/graduates.html">EGRESSOS</a></li>
+          <li class="global-menu-item" alt="trilhas"><a href="./src/views/trails.html">TRILHAS</a></li>
           </li>
         </ul>
       </ul>
@@ -36,62 +35,43 @@
   <main>
     <div class="grid">
       <div id="dog">
-        <img src="./images/dog_space.png">
+        <img src="/src/images/dog_space.png">
       </div>
-      <div id="balao">
-        <img src="./source/balao.png">
+      <div class="balloon">
         <p>Au! Seja bem-vindo!
           Desce a tela aí, vamos conhecer o SMD!</p>
       </div>
-
+      <div class="triangle"></div>
+      <div id="arrow">
+        <button id="botaoscrollprabaixo" onclick="scrollarprabaixo()"><img src="/src/images/arrow.svg"></button>
+      </div>
       <div id="corujacol4row29">
-        <a href="./views/trails.html">
-          <button id="botaotrilhas"><img src="./images/owl_trails.png"></button>
+        <a href="/src/views/trails.html">
+          <button id="botaotrilhas"></button>
         </a>
       </div>
-
+      <div class="owl_text">
+        <img class="ellipsis-text" src="/src/images/ellipsis_text.png" alt="">
+      </div>
       <div id="cachorrocol8row33">
-        <a href="./views/projects.html">
-          <button id="botaoprojetos">
-            <img class="cachorro-normal" src="./images/dog_projects.png">
-            <img class="cachorro-levantando" src="./images/dog_hover.png">
-
-          </button>
+        <a href="/src/views/projects.html">
+          <button id="botaoprojetos"></button>
         </a>
+      </div>
+      <div class="dog_text">
+        <img class="ellipsis-text" src="/src/images/ellipsis_text.png" alt="">
       </div>
 
       <div id="sapocol10row31">
-        <a href="./views/graduates.html">
-          <button id="botaoegressos"><img src="./images/frog_graduates.png"></button>
+        <a href="/src/views/graduates.html">
+          <button id="botaoegressos"></button>
         </a>
+      </div>
+      <div class="frog_text">
+        <img class="ellipsis-text" src="/src/images/ellipsis_text.png" alt="">
       </div>
     </div>
   </main>
-  <!-- <div class="grid">
-
-    <div id="balao">
-      <img src="./source/balao.png">
-      <p>Au! Seja bem-vindo!
-        Desce a tela aí, vamos conhecer o SMD!</p>
-    </div>
-
-    <div id="arrow">
-      <button id="botaoscrollprabaixo" onclick="scrollarprabaixo()"><img src="./source/arrow.png"></button>
-    </div>
-
-    <div id="textorow7col2">
-      <p><span>Sistemas e Mídias Digitais... </span>Um curso que vai desenvolver seu conhecimento em duas áreas:
-        Sistemas Multimídia e Mídias Digitais. </p>
-    </div>
-
-    <div id="textorow12col6">
-      <p>Os estudantes do SMD são <b>livres para escolher</b> como vão seguir seu caminho.</p>
-    </div>
-
-    <div id="textorow16col2">
-      <p>Mas existem quatro caminhos predefinidos que servem como guia, as chamadas <b>trilhas.</b></p>
-    </div>
-  </div> -->
 </body>
 
 </html>

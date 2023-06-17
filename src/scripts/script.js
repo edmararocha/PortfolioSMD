@@ -6,8 +6,6 @@ function scrollarprabaixo() {
 }
 
 var path = window.location.pathname;
-
-// Obtenha o elemento do menu que corresponde à página atual
 var menuItems = document.getElementsByClassName("global-menu-item");
 
 for (var i = 0; i < menuItems.length; i++) {
@@ -16,8 +14,8 @@ for (var i = 0; i < menuItems.length; i++) {
 
   console.log(path);
 
-  if (("/prototipo1Codesign/views/" + menuItemLink.getAttribute("href")) === path) {
-    menuItem.classList.add("active"); // Adicione a classe ativa ao item do menu correspondente
+  if (("/src/views/" + menuItemLink.getAttribute("href")) === path) {
+    menuItem.classList.add("active");
     break;
   }
 }

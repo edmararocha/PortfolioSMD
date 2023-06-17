@@ -25,7 +25,7 @@ h1 {
 }
 
 .balloon {
-    position: relative;
+    /* position: relative; */
     width: 15.2vw;
     height: 10vw;
     background-color: #F2F2F2;
@@ -84,7 +84,7 @@ h1 {
 .selected {
     margin-top: -0.2vw;
     font-weight: bold;
-    transition: border-bottom 0.15s ease;
+    /* transition: border-bottom 0.15s ease; */
     border-bottom: 0.2vw solid #FFFFFF;
 }
 

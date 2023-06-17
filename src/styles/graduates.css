@@ -1,7 +1,15 @@
 body {
     background:radial-gradient(50% 50% at 50% 50%, #546AB5 0%, #3E599C 51.56%, #394C8E 100%);
-    background-size: 100vw, 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+p {
+    color: black;
+}
+
+li,
+h1 {
     color: white;
 }
 
@@ -18,11 +26,10 @@ h1 {
 }
 
 .balloon {
-    position: relative;
+    /* position: relative; */
     width: 15.2vw;
     height: 10vw;
     background-color: #F2F2F2;
-    color: black;
     border-radius: 0.52vw;
     padding: 0.52vw;
     margin-bottom: 1.04vw;
@@ -39,8 +46,8 @@ h1 {
 }
 
 .balloon>p {
-    padding: 1vw;
-    font-size: 1.35vw;
+    padding: 0.8vw;
+    font-size: 1.4vw;
 }
 
 #img-frog {
@@ -53,6 +60,13 @@ h1 {
 #img-frog>img {
     width: 100%;
     height: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .map-content img, .location-content img {
