@@ -7,7 +7,7 @@ const projects = [
         descriptionCard: "Amanda é uma criança comum. Ela tem amigos, diverte-se com eles, mas em certos momentos se encontra solitária e fica triste.",
         objective: "Amanda é uma criança comum. Ela tem amigos, diverte-se com eles, mas em certos momentos se encontra solitária e fica triste. Por muito tempo, Amanda acreditou que não havia graça em brincar sozinha. Imagine a surpresa dela ao descobrir a sua brincadeira preferida na vida, incomum e maravilhosa…",
         imgUrl: "../source/project.png",
-        videoUrl: "https://youtu.be/pSI7sd_p4Yc",
+        videoUrl: "https://www.youtube.com/embed/pSI7sd_p4Yc",
         heldIn: "Produção Audiovisual para Crianças e Adolescentes, em 2022.2",
         partcipants: "Amanda Milena",
     },
