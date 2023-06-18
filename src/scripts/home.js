@@ -2,9 +2,9 @@
 const frog = document.querySelector('#botaoegressos')
 const sapoLevantando = new Image();
 
-const sapoNormal = '../src/images/frog_graduates.png'
+const sapoNormal = './src/images/frog_graduates.png'
 
-sapoLevantando.src = '../src/images/frog_hover.png'
+sapoLevantando.src = './src/images/frog_hover.png'
 sapoLevantando.onload = function(){
 frog.addEventListener('mouseover', function() {
   this.style.backgroundImage = `url(${sapoLevantando.src})`;
@@ -24,9 +24,9 @@ frog.addEventListener('mouseout', function() {
 const dog = document.querySelector('#botaoprojetos')
 const cachorroLevantando = new Image();
 
-const cachorroNormal = '../src/images/dog_projects.png'
+const cachorroNormal = './src/images/dog_projects.png'
 
-cachorroLevantando.src = '../src/images/dog_hover.png'
+cachorroLevantando.src = './src/images/dog_hover.png'
 cachorroLevantando.onload = function(){
 dog.addEventListener('mouseover', function() {
   this.style.backgroundImage = `url(${cachorroLevantando.src})`;
@@ -46,9 +46,9 @@ dog.addEventListener('mouseout', function() {
 // const owl = document.querySelector('#botaotrilhas')
 // const corujaLevantando = new Image();
 
-// const corujaNormal = '../src/images/owl_trails.png'
+// const corujaNormal = './src/images/owl_trails.png'
 
-// corujaLevantando.src = '../src/images/owl_hover.png'
+// corujaLevantando.src = './src/images/owl_hover.png'
 // corujaLevantando.onload = function(){
 // owl.addEventListener('mouseover', function() {
 //   this.style.backgroundImage = `url(${corujaLevantando.src})`;
