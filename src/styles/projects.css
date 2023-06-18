@@ -1,7 +1,7 @@
-body { 
+html { 
     background: linear-gradient(180deg, #1f2444 28.13%, #2e265f 72.4%, #3e2f4d 94.79%);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 p {

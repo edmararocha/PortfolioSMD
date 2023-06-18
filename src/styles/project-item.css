@@ -1,6 +1,6 @@
-body { 
+html { 
     background: linear-gradient(180deg, #1f2444 28.13%, #2e265f 72.4%, #3e2f4d 94.79%);
-    background-size: 100vw, 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     color: white;
 }

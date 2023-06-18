@@ -1,7 +1,7 @@
-body {
+html {
     background:radial-gradient(50% 50% at 50% 50%, #546AB5 0%, #3E599C 51.56%, #394C8E 100%);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 p {
