@@ -1,2 +1,0 @@
-# Desativar a funcionalidade 'interest-cohort' do FLoC
-Header set Permissions-Policy "interest-cohort=()"
