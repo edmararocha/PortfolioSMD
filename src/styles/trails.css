@@ -24,10 +24,7 @@ SEMPRE USAR VW, usando calc de regra de 3*/
     margin-left: 1.17vw; 
 }
 #corujatrilhas > img{
-    max-width: "29.2979166667";
-    max-height:"28.4302083333";
-    min-width: "29.2979166667";
-    min-height:"28.4302083333";
+    width: 20.52vw;
     margin-top:4vw;
     margin-left:0.5vw;
 }

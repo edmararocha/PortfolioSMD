@@ -9,6 +9,7 @@ function mudartrilha(trilha){
     }
     console.log("Você está na trilha", ntrilha);
     if(ntrilha==1){
+      corujadastrilhas.style.width="29.9vw";
       corujadastrilhas.setAttribute("src","../source/coruja design.png");
       corujadastrilhas.style.marginTop="2.5vw";
       corujadastrilhas.style.marginLeft="0.5vw";
@@ -22,9 +23,11 @@ function mudartrilha(trilha){
       frasebalaotrilhas.style.marginTop="-2.5vw";
     }
     if(ntrilha==2){
+      corujadastrilhas.style.width="20vw";
       corujadastrilhas.setAttribute("src","../source/coruja audiovisual.png");
       corujadastrilhas.style.marginTop="4vw";
       corujadastrilhas.style.marginLeft="1.5vw";
+      
       h1dastrilhas.innerText="ANIMAÇÃO E AUDIOVISUAL";
       h1dastrilhas.style.fontSize="2.88vw";
       h1dastrilhas.style.textAlign="left";
@@ -35,6 +38,7 @@ function mudartrilha(trilha){
 
     }
     if(ntrilha==3){
+      corujadastrilhas.style.width="21.15vw";
       corujadastrilhas.setAttribute("src","../source/corujaprog.png");
       corujadastrilhas.style.marginTop="3vw";
       corujadastrilhas.style.marginLeft="0.5vw";
@@ -42,6 +46,7 @@ function mudartrilha(trilha){
       frasebalaotrilhas.innerText="A trilha de sistemas multimídia aborda as áreas mais voltadas para a programação e banco de dados"
     }
     if(ntrilha==4){
+      corujadastrilhas.style.width="28.23vw";
       corujadastrilhas.setAttribute("src","../source/coruja jogos.png");
       corujadastrilhas.style.marginTop="-3.8vw";
       corujadastrilhas.style.marginLeft="-7vw"
