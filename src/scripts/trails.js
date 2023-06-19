@@ -38,7 +38,7 @@ function mudartrilha(trilha){
       corujadastrilhas.setAttribute("src","../source/corujaprog.png");
       corujadastrilhas.style.marginTop="3vw";
       corujadastrilhas.style.marginLeft="0.5vw";
-      h1dastrilhas.innerText="SISTEMA MULTIMÍDIA";
+      h1dastrilhas.innerText="SISTEMAS MULTIMÍDIA";
       frasebalaotrilhas.innerText="A trilha de sistemas multimídia aborda as áreas mais voltadas para a programação e banco de dados"
     }
     if(ntrilha==4){
