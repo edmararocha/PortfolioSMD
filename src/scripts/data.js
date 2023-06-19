@@ -2,12 +2,12 @@ const projects = [
     {
         id: 0,
         categoryId: 0,
-        name: "Imaginarium - Uma Leitura Brincante",
-        description: "Amanda é uma criança comum. Ela tem amigos, diverte-se com eles, mas em certos momentos se encontra solitária e fica triste. Por muito tempo, Amanda acreditou que não havia graça em brincar sozinha. Imagine a surpresa dela ao descobrir a sua brincadeira preferida na vida, incomum e maravilhosa…",
-        descriptionCard: "Amanda é uma criança comum. Ela tem amigos, diverte-se com eles, mas em certos momentos se encontra solitária e fica triste.",
+        name: "Ariel",
+        description: "Controle suas aplicações de testosterona. Acompanhe suas consultas médicas. Informe-se através de artigos e muito mais.",
+        descriptionCard: "Controle suas aplicações de testosterona. Acompanhe suas consultas médicas. Informe-se através de artigos e muito mais.",
         imgUrl: "../source/project.png",
-        videoUrl: "https://www.youtube.com/embed/pSI7sd_p4Yc",
-        heldIn: "Produção Audiovisual para Crianças e Adolescentes, em 2022.2",
+        videoUrl: "https://www.youtube.com/embed/t-hK0KsicPQ",
+        heldIn: "Projeto II",
         partcipants: "Amanda Milena",
     },
     {
