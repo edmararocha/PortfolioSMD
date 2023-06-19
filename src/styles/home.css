@@ -102,21 +102,19 @@ button {
 
 @keyframes coruja {
     0% {
-        background-image: url('../images/owl_trails.png');
         opacity: 1;
     }
-
+    
     50% {
-
-        opacity: 0;
+        background-image: url('../images/owl_half.png');
     }
-
+    75% {
+        opacity: 1;
+    }
     100% {
         background-image: url('../images/owl_hover.png');
-
         opacity: 1;
     }
-
 }
 
 #dog {
@@ -216,7 +214,7 @@ align-items: center;*/
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 4;
-    margin-top: 8vw;
+    margin-top: 6.8vw;
     margin-left: 1.1vw;
 
 
@@ -237,10 +235,10 @@ align-items: center;*/
     height: 9.42vw;
 }
 
-#textorow7col2 {
+#floating-text1 {
     color: white;
-    grid-column-start: 2;
-    grid-column-end: 8;
+    grid-column-start: 1;
+    
     grid-row-start: 7;
     grid-row-end: 7;
     width: 49vw;
@@ -248,41 +246,57 @@ align-items: center;*/
     font-weight: 400;
 }
 
-#textorow7col2>p {
-    font-size: 1.84vw;
+#floating-text1>p {
+    font-size: 1.88vw;
 }
 
-#textorow7col2>p>span {
-    font-size: 3.57vw
+#floating-text1>p>span {
+    font-size: 3.65vw
 }
 
-#textorow12col6 {
+#floating-text2 {
     color: white;
-    grid-column-start: 6;
+    grid-column-start: 5;
     grid-column-end: 12;
     grid-row-start: 12;
     grid-row-end: 12;
-
-    width: 49.97vw;
+    font-weight: 400;
+    width: 48.75vw;
+    margin-left: 4.53vw;
 }
 
-#textorow12col6>p {
-    font-size: 1.84vw;
+#floating-text2>p {
+    font-size: 1.88vw;
 }
 
-#textorow16col2 {
-    color: var(--grey);
-    grid-column-start: 2;
-    grid-column-end: 9;
+#floating-text2>p {
+    font-size: 1.88vw;
+}
+
+#floating-text2>p>span {
+   font-weight: 500;
+}
+
+#floating-text3 {
+    color: white;
+    grid-column-start: 0;
+    
     grid-row-start: 16;
     grid-row-end: 16;
 
-    width: 51.81vw;
+    width: 51.20vw;
+    font-weight: 400;
 }
 
-#textorow16col2>p {
-    font-size: 1.84vw;
+#floating-text3>p {
+    font-size: 1.88vw;
 }
+
+#floating-text3>p>span {
+    font-weight: 500;
+}
+
+
 
 #botaotrilhas {
     width: 5.16vw;
@@ -292,31 +306,31 @@ align-items: center;*/
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: background-image 0.3s ease;
+    opacity: 1;
+    transition: width 0.3s, height 0.3s, margin-top 0.3s, margin-left 0.3s;
 
+    &:hover{
+        width: 9.53vw;
+        height: 8.82vw;
+        margin-top: -1.08vw;
+        margin-left: -2.2vw;
+        background-image: url('../images/owl_hover.png');
+        opacity: 1;
+        animation-name: coruja;
+        animation-duration: 0.3s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 
 }
 
-#botaotrilhas:hover {
-
-    width: 9.53vw;
-    height: 8.82vw;
-    margin-top: -1.08vw;
-    margin-left: -2.2vw;
-    animation-name: coruja;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
-
-}
 
 #corujacol4row29 {
     grid-column-start: 7;
     grid-row-start: 31;
-    margin-left: -2.2vw;
-    margin-top: -13vw;
+    margin-left: -7.2vw;
+    margin-top: -14.2vw;
     width: 9.53vw;
     height: 15.72vw;
 }
@@ -324,8 +338,8 @@ align-items: center;*/
 .owl_text {
     grid-column-start: 7;
     grid-row-start: 30;
-    margin-left: 1.9vw;
-    margin-top: -3.1vw;
+    margin-left: -2.6vw;
+    margin-top: -4.1vw;
 }
 
 .dog_text {
@@ -342,20 +356,27 @@ align-items: center;*/
 }
 
 
-#botaotrilhas img {
-    width: 5.16vw;
-    height: 6.82vw;
-    position: relative;
-    transition: opacity 0.3s ease;
-}
+
 
 
 
 .ellipsis-text {
-    width: 7.03vw;
 
     animation: float_text 1s ease-in-out infinite;
 }
+
+.ellipsis-text.projects{
+    width: 8.18vw;
+}
+
+.ellipsis-text.trails{
+    width: 6.82vw;
+}
+
+.ellipsis-text.graduates{
+    width: 8.39vw;
+}
+
 
 #cachorrocol8row33>.ellipsis-text {
     margin-left: 7.9vw;
