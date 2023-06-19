@@ -15,6 +15,7 @@ for (var i = 0; i < menuItems.length; i++) {
   console.log(path);
 
   if (("/PortfolioSMD/src/views/" + menuItemLink.getAttribute("href")) === path) {
+    console.log("OK");
     menuItem.classList.add("active");
     break;
   }

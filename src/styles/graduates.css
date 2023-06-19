@@ -127,40 +127,50 @@ main {
     background-color: #fff;
     width: 34.5vw;
     height: 40.1vw;
-    border-radius: 0.5vw;
-    padding: 1.5vw;
+    border-radius: 0.6vw;
 }
 
 .popup.show {
     display: flex;
 }
 
+.header-card {
+    padding: 0.5vw;
+    background-color: #273574;
+    border: none;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    display: flex;
+    align-items: center;
+}
+
 .but {
     position:absolute;
-    margin-left: 33vw;
+    margin-left: 31vw;
     display: flex;
     justify-content: flex-end;
 }
 
-#card-title {
-    width: 100%;
-    padding-bottom: 0.5vw;
-    border-bottom: #1F2444 0.2vw solid;
-}
-
 button {
-    width: 2vw;
-    height: 2vw;
-    background-color:burlywood;
+    width: 2.2vw;
+    height: 2.2vw;
+    background-color:white;
     border: none;
     border-radius: 50%;
     padding: 0.1vw;
     font-weight: bold;
 }
 
+#card-title {
+    width: 100%;
+    padding-bottom: 0.2vw;
+}
+
 h2 {
     text-align: center;
     font-size: 2.39vw;
+    color: white;
+    font-weight: 400;
 }
 
 h3 {
@@ -168,15 +178,20 @@ h3 {
     font-size: 1.7vw;
 }
 
+.content {
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
 #content-1 {
-    margin-top: 1.5vw;
+    margin-top: 1vw;
     display: flex;
     justify-content: space-between;
 }
 
 #content-1 #img-graduate {
-    width: 12vw;
-    height: 12vw;
+    width: 11vw;
+    height: 11vw;
     border-radius: 50%;
     background-image: url(../images/graduate_exemple.jpeg);
     background-size: cover;
@@ -184,18 +199,14 @@ h3 {
 }
 
 #info {
-    width: 20vw;
+    width: 18vw;
     padding: 1vw;
 }
 
 .desc-items {
-    margin-top: 1vw;
+    margin-top: 0.8vw;
 }
 
 #content-2, #content-3 {
-    padding-top: 1.5vw;
-}
-
-#description {
-    margin-top: 0.5vw;
+    padding-top: 1.2vw;
 }
