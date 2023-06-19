@@ -1,9 +1,11 @@
 body{
     background-color: var(--lightgrey);
-    background-image: url(../source/bgtrilhas.png);
+    background-image: url(../source/bcktrilhas.png);
     background-size: cover;
     background-repeat: no-repeat;  
 }
+/*1920px = 98vw
+SEMPRE USAR VW, usando calc de regra de 3*/
 
 .gridtrilhas{
     min-width: 98vw;
@@ -13,7 +15,6 @@ body{
     grid-template-columns: repeat(12, 8.22vw);
     grid-template-rows:repeat(5, 1fr);
 }
-
 #corujatrilhas{
     grid-column-start: 8;
     grid-column-end: 10;
@@ -23,9 +24,12 @@ body{
     margin-left: 1.17vw; 
 }
 #corujatrilhas > img{
-    min-width: 22.1vw;
-    max-width: 22.1vw;
-    
+    max-width: "29.2979166667";
+    max-height:"28.4302083333";
+    min-width: "29.2979166667";
+    min-height:"28.4302083333";
+    margin-top:4vw;
+    margin-left:0.5vw;
 }
 #balaotrilhas{
     font-family: 'Montserrat', sans-serif;
@@ -58,4 +62,25 @@ body{
 #balaotrilhas > #select{
     margin-left: 5.97vw;
     margin-top: 2.50vw;
+}
+.localnav-trilhas{
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    justify-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+#selecttrilhas{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: -6.5vw;
+    
+}
+.localnav-trilhas img{
+    width: 6.5125vw;
+    height: 6.5125vw;
 }
