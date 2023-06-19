@@ -33,7 +33,7 @@ textoCachorroHover.src = './src/images/text-projects-hover.png'
 cachorroLevantando.onload = function(){
 dog.addEventListener('mouseover', function() {
   this.style.backgroundImage = `url(${cachorroLevantando.src})`;
-  dog_text.style.backgroundImage = `url(${textoCachorroHover.src})`;
+  // dog_text.style.backgroundImage = `url(${textoCachorroHover.src})`;
   this.style.width = "4.95vw";
   this.style.height = "9.69vw";
   
@@ -42,7 +42,7 @@ dog.addEventListener('mouseover', function() {
     height: 12.08vw;* */
 dog.addEventListener('mouseout', function() {
   this.style.backgroundImage = `url(${cachorroNormal})`;
-  dog_text.style.backgroundImage = `url(${textoCachorro.src})`;
+  // dog_text.style.backgroundImage = `url(${textoCachorro.src})`;
   this.style.marginLeft = "vw"
 
 });}
