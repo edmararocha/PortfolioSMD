@@ -16,7 +16,6 @@ if (project) {
     var iframeElement = document.getElementById("iframe");
     var iframeContent = document.getElementById("player");
     var description = document.getElementById("description");
-    var objective = document.getElementById("objective");
     var heldIn = document.getElementById("held-in");
     var participants = document.getElementById("participants");
     var acess = document.getElementById("acess");
