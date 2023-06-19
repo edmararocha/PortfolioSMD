@@ -14,7 +14,7 @@ for (var i = 0; i < menuItems.length; i++) {
 
   console.log(path);
 
-  if (("/PortfolioSMD/src/views/graduates.html" + menuItemLink.getAttribute("href")) === path) {
+  if (("/PortfolioSMD/src/views/" + menuItemLink.getAttribute("href")) === path) {
     menuItem.classList.add("active");
     break;
   }
