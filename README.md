@@ -24,3 +24,6 @@ As funções a serem implementadas no futuro são: filtragem de projetos por tri
 
 26/05/2023
 No momento atual estamos fazendo a parte Front-End do projeto e passando as telas do Figma para o HTML
+
+19/06/2023
+As primeiras animações já foram implementadas e todas as telas já estão inclusas no site, algumas telas ainda precisam de polimento mas o projeto já está bem encaminhado.
