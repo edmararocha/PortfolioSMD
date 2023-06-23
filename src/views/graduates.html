@@ -15,8 +15,9 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/graduates.css">
+  <script type="module" src="../scripts/graduates.js" defer></script>
+  <script src="../scripts/data_graduates.js" defer></script>
   <script src="../scripts/script.js" defer></script>
-  <script src="../scripts/graduates.js" defer></script>
 </head>
 
 <body>
@@ -42,23 +43,17 @@
       </div>
       <div class="triangle"></div>
       <div id="img-frog">
-        <img src="../images/frog-icon.png">
+        <img src="../images/frog_icon.png">
       </div>
     </div>
     <div class="content">
       <div class="map-content"><img src="../images/map.png" alt="mapa"></div>
-      <div class="graduate-location" id="content-location" onclick="abrirPopup()">
-        <div class="location-content"><img src="../images/location-icon.png" alt="localização"></div>
-        <div class="user-location-text">
-          <p id="text">Jonas Forte</p>
-        </div>
-      </div>
       <div id="popup" class="popup">
         <div class="card">
           <div class="header-card">
-            <div class="but"><button onclick="fecharPopup()">X</button></div>
+            <div id="but"><button>X</button></div>
             <div id="card-title">
-              <h2>Brescia, Itália</h2>
+              <h2 id="graduate-location"></h2>
             </div>
           </div>
           <div class="content">
@@ -66,14 +61,14 @@
               <div id="img-graduate">
               </div>
               <div id="info">
-                <h3 id="Name">Jonas Forte</h3>
+                <h3 id="name"></h3>
                 <div class="desc-items">
                   <h5>Ano de formatura:</h5>
-                  <p id="formate-year">2017</p>
+                  <p id="graduate-year"></p>
                 </div>
                 <div class="desc-items">
                   <h5>Cargo Atual:</h5>
-                  <p>UI Designer - Luxottica</p>
+                  <p id="job"></p>
                 </div>
                 <!-- <div class="desc-items">
                   <p>Linkedin:</p>
@@ -83,17 +78,11 @@
             </div>
             <div id="content-2">
               <h3>Bio</h3>
-              <p id="description">
-                Sou apaixonado por interação homem-máquina, design de interfaces gráficas e inteligência artificial. Em
-                2018, mudei-me para a Itália para fazer meu mestrado de engenharia em Tecnologias de Informação e
-                Multimídia. Atualmente, trabalho na marca Sunglass Hut, em projetos de roadmap, campanhas de marcas
-                licenciadas e internas.
-              </p>
+              <p id="bio"></p>
             </div>
             <div id="content-3">
               <h3>Qual o impacto do SMD na vida?</h3>
-              <p id="description">Meu percurso acadêmico foi fundamental para meu crescimento pessoal e profissional,
-                proporcionando-me a oportunidade de descobrir novas paixões e vivenciar experiências inesperadas.</p>
+              <p id="aboutSMD"></p>
             </div>
           </div>
         </div>

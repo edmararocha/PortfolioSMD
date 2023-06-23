@@ -1,6 +1,5 @@
 import {projects} from './data.js';
 
-var projectDetailsDiv = document.getElementById("project-details");
 var urlParams = new URLSearchParams(window.location.search);
 var projectId = urlParams.get("id");
 
