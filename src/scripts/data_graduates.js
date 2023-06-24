@@ -39,7 +39,7 @@ const graduates = [
         id: 3,
         name: "Pedro Ítalo da Costa Pinto",
         imgUrl: "../images/graduates/3.jpg",
-        location: "Lisboa",
+        location: "Lisboa, Portugal",
         positionInMap: ['45vw', '32vw'],
         graduateYear: "2017",
         job: "Senior IT Auditor na Volkswagen Group Services",

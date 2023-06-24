@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-  href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&family=Rubik:wght@500&family=Staatliches&display=swap"
-  rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&family=Rubik:wght@500&family=Staatliches&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./src/styles/style.css">
   <link rel="stylesheet" href="./src/styles/home.css">
   <script src="./src/scripts/script.js" defer></script>
@@ -22,16 +22,72 @@
 <body>
   <header>
     <nav class="global-nav">
-      <div class="logo-content"><a href="/PortfolioSMD/index.html"><img src="./src/source/smd.png" alt="logo do SMD" id="smd-logo"></a></div>
-      <ul class="global-menu-content">
+      <div class="logo-content"><a href="/PortfolioSMD/index.html"><img src="./src/source/smd.png" alt="logo do SMD"
+            id="smd-logo"></a></div>
+      <div class="global-menu-content">
         <ul class="global-menu">
           <li class="global-menu-item" alt="projetos"><a href="./src/views/projects.html">PROJETOS</a></li>
           <li class="global-menu-item" alt="egressos"><a href="./src/views/graduates.html">EGRESSOS</a></li>
           <li class="global-menu-item" alt="trilhas"><a href="./src/views/trails.html">TRILHAS</a></li>
           </li>
         </ul>
-      </ul>
+      </div>
     </nav>
+
+    <!-- MENU - HAMBURGUER [1] -->
+
+    <!-- <nav class="global-nav-hamburguer">
+      <div class="logo-content"><a href="/PortfolioSMD/index.html"><img src="./src/source/smd.png" alt="logo do SMD"
+            id="smd-logo"></a></div>
+      <div class="global-menu-hamburguer-content">
+        <div class="container">
+          <input type="checkbox" id="checkbox-menu">
+          <label for="checkbox-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="global-menu-hamburguer">
+            <li class="global-menu-item" alt="projetos"><a href="./src/views/projects.html">PROJETOS</a></li>
+            <li class="global-menu-item" alt="egressos"><a href="./src/views/graduates.html">EGRESSOS</a></li>
+            <li class="global-menu-item" alt="trilhas"><a href="./src/views/trails.html">TRILHAS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+    <!-- MENU - HAMBURGUER [2] -->
+
+    <!-- <div class="global-nav">
+      <div class="logo-content"><a href="/PortfolioSMD/index.html"><img src="./src/source/smd.png" alt="logo do SMD"
+            id="smd-logo"></a></div>
+      <div class="menu-hamburguer-content">
+        <input type="checkbox" id="burger-toggle">
+        <label for="burger-toggle" class="burger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+        <nav class="menu">
+          <div class="menu-inner">
+            <ul class="menu-nav">
+              <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+                    <div>Projetos</div>
+                  </span></a>
+              </li>
+              <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+                    <div>Egressos</div>
+                  </span></a>
+              </li>
+              <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+                    <div>trilhas</div>
+                  </span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div> -->
   </header>
   <main>
     <div class="grid">
@@ -43,7 +99,7 @@
           Desce a tela aí, vamos conhecer o SMD!</p>
       </div>
       <div class="triangle"></div>
-      
+
       <div id="arrow">
         <button id="botaoscrollprabaixo" onclick="scrollarprabaixo()"><img src="./src/images/arrow.svg"></button>
       </div>

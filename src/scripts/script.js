@@ -1,8 +1,8 @@
 function voltareScrollar() {
-   window.location.href = "index.html";
+  window.location.href = "index.html";
 }
 function scrollarprabaixo() {
-   scrollTo(0, 6500);
+  scrollTo(0, 6500);
 }
 
 var path = window.location.pathname;
@@ -20,3 +20,12 @@ for (var i = 0; i < menuItems.length; i++) {
     break;
   }
 }
+
+// function toggleMenu() {
+//   // console.log(checkbox.ariaChecked);
+//   var checkbox = document.querySelector('#checkbox-menu');
+//   if (checkbox.checked) {
+//     var menu = document.querySelector('.global-menu-hamburguer-content');
+//     menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+//   }
+// }
