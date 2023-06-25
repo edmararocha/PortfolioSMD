@@ -21,11 +21,7 @@ for (var i = 0; i < menuItems.length; i++) {
   }
 }
 
-// function toggleMenu() {
-//   // console.log(checkbox.ariaChecked);
-//   var checkbox = document.querySelector('#checkbox-menu');
-//   if (checkbox.checked) {
-//     var menu = document.querySelector('.global-menu-hamburguer-content');
-//     menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-//   }
-// }
+function toggleMenu() {
+  var menuHamburguer = document.getElementById("hamburquer-menu-content");
+  menuHamburguer.classList.toggle("active");
+}
