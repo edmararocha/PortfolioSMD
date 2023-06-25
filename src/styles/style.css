@@ -7,11 +7,16 @@ main {
     width: 80vw;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Rubik', sans-serif;
 }
 
-p, a {
+p,
+a {
     font-family: 'Fredoka', sans-serif;
     font-weight: 300;
 }
@@ -29,69 +34,155 @@ main {
     margin-top: 3.5vw;
 }
 
-.global-nav {
-    top: 0;
-    background-color: rgba(32, 32, 32, 0.3);
-    background-blend-mode: multiply;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 999;
+@media (min-width:600px) {
+    .global-menu-hamburguer {
+        display: none;
+    }
+
+    .global-nav {
+        top: 0;
+        background-color: rgba(32, 32, 32, 0.3);
+        background-blend-mode: multiply;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 999;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .logo-content {
+        width: 6vw;
+        margin-left: 10vw;
+    }
+
+    #smd-logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .global-menu {
+        list-style-type: none;
+        display: flex;
+        margin-right: 10vw;
+    }
+
+    .global-menu-item {
+        padding: 0.2vw;
+        margin-left: 3.38vw;
+        list-style: none;
+        color: white;
+        font-size: larger;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .global-menu-item a {
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .global-menu-item::after {
+        /* bolinha */
+        content: "";
+        display: block;
+        width: 0.4vw;
+        height: 0.4vw;
+        background-color: transparent;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+    }
+
+    .global-menu-item.active::after {
+        background-color: white;
+    }
+
+    .global-menu-item:not(.active):hover {
+        color: #cccccc;
+    }
 }
 
-.logo-content {
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    width: 5.2vw;
-    height: 2.8vw;
-    margin-left: 10vw;
-}
+@media (max-width: 599px) {
+    .global-menu-content {
+        display: none;
+    }
 
-#smd-logo {
-    width: 100%;
-    height: 100%;
-}
+    .global-nav {
+        top: 0;
+        background-color: rgba(32, 32, 32, 0.3);
+        background-blend-mode: multiply;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 999;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
 
-.global-menu {
-    list-style-type: none;
-    display: flex;
-    margin-right: 10vw;
-}
+    .logo-content {
+        width: 8vw;
+        margin-left: 10vw;
+    }
 
-.global-menu-item {
-    padding: 0.2vw;
-    margin-left: 3.38vw;
-    list-style: none;
-    color: white;
-    font-size: larger;
-    text-decoration: none;
-    position: relative;
-}
+    #smd-logo {
+        width: 100%;
+        height: 100%;
+    }
 
-.global-menu-item a {
-    font-family: 'Rubik', sans-serif;
-}
+    .hamburquer-menu-content {
+        position: fixed;
+        margin-top: -4.5vw;
+        right: -50vw;
+        width: 50vw;
+        height: 100vh;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        background-color: rgb(32, 32, 32);
+        transition: right 0.3s ease;
+    }
 
-.global-menu-item::after { /* bolinha */
-    content: "";
-    display: block;
-    width: 0.4vw;
-    height: 0.4vw;
-    background-color: transparent;
-    position: absolute;
-    /* bottom: -0.26vw; */
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-}
+    .hamburquer-menu-content.active {
+        right: 0;
+    }
 
-.global-menu-item.active::after {
-    background-color: white;
-}
+    .global-menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
 
-.global-menu-item:not(.active):hover {
-    color: #cccccc; 
+    .global-menu {
+        list-style-type: none;
+        display: flex;
+        margin-top: 2.5vw;
+    }
+
+    .global-menu-item {
+        list-style: none;
+        color: white;
+        font-size: larger;
+        text-decoration: none;
+        position: relative;
+        padding: 2.5vw;
+        text-align: left;
+    }
+
+    .global-menu-item a {
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .toggle-btn {
+        position: fixed;
+        top: 2vw;
+        right: 5vw;
+        cursor: pointer;
+        color: #fff;
+        z-index: 9999;
+    }
 }

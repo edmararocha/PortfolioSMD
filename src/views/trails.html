@@ -23,14 +23,23 @@
     <nav class="global-nav">
       <div class="logo-content"><a href="/PortfolioSMD/index.html"><img src="../source/smd.png" alt="logo do SMD"
             id="smd-logo"></a></div>
-      <ul class="global-menu-content">
+      <div class="global-menu-content">
         <ul class="global-menu">
           <li class="global-menu-item" alt="projetos"><a href="../views/projects.html">PROJETOS</a></li>
           <li class="global-menu-item" alt="egressos"><a href="../views/graduates.html">EGRESSOS</a></li>
           <li class="global-menu-item" alt="trilhas"><a href="../views/trails.html">TRILHAS</a></li>
-          </li>
         </ul>
-      </ul>
+      </div>
+      <div class="global-menu-hamburguer">
+        <div class="hamburquer-menu-content" id="hamburquer-menu-content">
+          <ul class="global-menu">
+            <li class="global-menu-item" alt="projetos"><a href="projects.html">PROJETOS</a></li>
+            <li class="global-menu-item" alt="egressos"><a href="graduates.html">EGRESSOS</a></li>
+            <li class="global-menu-item" alt="trilhas"><a href="trails.html">TRILHAS</a></li>
+          </ul>
+        </div>
+        <div class="toggle-btn" onclick="toggleMenu()">&#9776;</div>
+      </div>
     </nav>
   </header>
   <div class="gridtrilhas">
@@ -40,18 +49,19 @@
     <div id="balaotrilhas">
       <img src="../source/balaobranco.png">
       <h1 id="h1dastrilhas">TRILHAS?!</h1>
-      <p id="frasebalaotrilhas">Calma! Eu posso te contar um pouco mais sobre elas, mas antes me ajude a escolher sobre qual falar primeiro...
+      <p id="frasebalaotrilhas">Calma! Eu posso te contar um pouco mais sobre elas, mas antes me ajude a escolher sobre
+        qual falar primeiro...
       </p>
       <p id="select">Selecione algum desses itens</p>
     </div>
-      <nav class="localnav-trilhas">
-        <ul id="selecttrilhas" class="localnav-trilhas">
-          <li><a onclick="mudartrilha(1)"><img src="../source/trilhadesign.png"></a></li>
-          <li><a onclick="mudartrilha(2)"><img src="../source/trilhaaudiovisual.png"></a></li>
-          <li><a onclick="mudartrilha(3)"><img src="../source/trilhasistemas.png"></a></li>
-          <li><a onclick="mudartrilha(4)"><img src="../source/trilhajogos.png"></a></li>
-        </ul>
-      </nav>
+    <nav class="localnav-trilhas">
+      <ul id="selecttrilhas" class="localnav-trilhas">
+        <li><a onclick="mudartrilha(1)"><img src="../source/trilhadesign.png"></a></li>
+        <li><a onclick="mudartrilha(2)"><img src="../source/trilhaaudiovisual.png"></a></li>
+        <li><a onclick="mudartrilha(3)"><img src="../source/trilhasistemas.png"></a></li>
+        <li><a onclick="mudartrilha(4)"><img src="../source/trilhajogos.png"></a></li>
+      </ul>
+    </nav>
   </div>
 
 

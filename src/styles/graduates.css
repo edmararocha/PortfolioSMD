@@ -21,14 +21,15 @@ h1 {
 }
 
 #character-content {
-    margin-left: 50.43vw;
+    margin-top: -2vw;
+    margin-left: 35.8vw;
     display: flex;
 }
 
 .balloon {
     /* position: relative; */
-    width: 15.2vw;
-    height: 10vw;
+    width: 30.2vw;
+    height: 5.5vw;
     background-color: #F2F2F2;
     border-radius: 0.52vw;
     padding: 0.52vw;
@@ -37,7 +38,7 @@ h1 {
 
 .triangle {
     margin-left: -0.5vw;
-    margin-top: 7vw;
+    margin-top: 4vw;
     width: 0;
     height: 0;
     border-top: 1.04vw solid transparent;
@@ -51,8 +52,8 @@ h1 {
 }
 
 #img-frog {
-    margin-left: 0.1vw;
-    margin-top: 2vw;
+    margin-left: 1vw;
+    /* margin-top: 0.5vw; */
     width: 10.57vw;
     height: 9.89vw;
 }
@@ -77,8 +78,6 @@ main {
 
 .graduate-location {
     position:absolute;
-    left: 48vw;
-    top: 35vw;
     z-index: 2;
     display: flex;
     /* flex-direction: column; */
@@ -91,22 +90,22 @@ main {
     height: 2.5vw;
 }
 
-.location-content img {
+.location-content {
     transition: background-color 0.3s ease;
 }
 
-.location-content img:hover {
+.location-content:hover {
     color: #cccccc;
 }
 
-#text {
+.name-text {
     margin-left: 0.2vw;
     display: none;
     font-weight: bold;
     color: white;
 }
 
-.graduate-location:hover #text {
+.graduate-location:hover .name-text {
     display: block;
 }
 
@@ -128,6 +127,7 @@ main {
     width: 34.5vw;
     height: 40.1vw;
     border-radius: 0.6vw;
+    overflow: auto;
 }
 
 .popup.show {
@@ -144,9 +144,9 @@ main {
     align-items: center;
 }
 
-.but {
+#but {
     position:absolute;
-    margin-left: 31vw;
+    margin-left: 30vw;
     display: flex;
     justify-content: flex-end;
 }
@@ -181,6 +181,7 @@ h3 {
 .content {
     padding-left: 1.5vw;
     padding-right: 1.5vw;
+    padding-bottom: 1.5vw;
 }
 
 #content-1 {
@@ -193,7 +194,6 @@ h3 {
     width: 11vw;
     height: 11vw;
     border-radius: 50%;
-    background-image: url(../images/graduate_exemple.jpeg);
     background-size: cover;
     background-position: center;
 }

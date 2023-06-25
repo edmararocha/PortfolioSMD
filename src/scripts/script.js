@@ -1,8 +1,8 @@
 function voltareScrollar() {
-   window.location.href = "index.html";
+  window.location.href = "index.html";
 }
 function scrollarprabaixo() {
-   scrollTo(0, 6500);
+  scrollTo(0, 6500);
 }
 
 var path = window.location.pathname;
@@ -19,4 +19,9 @@ for (var i = 0; i < menuItems.length; i++) {
     menuItem.classList.add("active");
     break;
   }
+}
+
+function toggleMenu() {
+  var menuHamburguer = document.getElementById("hamburquer-menu-content");
+  menuHamburguer.classList.toggle("active");
 }
