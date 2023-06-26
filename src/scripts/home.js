@@ -122,6 +122,7 @@ function preloadImages(callback) {
 // Função para executar a animação
 function runAnimation() {
   var animation = document.getElementById('animation');
+  animation.style.display = 'block'; // Removendo o display: none
   var images = animation.getElementsByTagName('img');
   var totalFrames = images.length;
   var currentFrame = 0;
@@ -143,7 +144,10 @@ function runAnimation() {
         // Define a opacidade de todos os frames como 0 após o fim da animação
         for (var i = 0; i < totalFrames; i++) {
           images[i].style.opacity = 0;
+
         }
+        animation.parentNode.removeChild(animation);
+
       }, 20); // Tempo para manter os frames visíveis após o fim da animação (1 segundo neste caso)
     }
   }

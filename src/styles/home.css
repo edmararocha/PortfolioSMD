@@ -453,6 +453,7 @@ align-items: center;*/
       height: 100vh;
       position: absolute;
       overflow: hidden;
+      display: none;
     }
 
     #animation img {
