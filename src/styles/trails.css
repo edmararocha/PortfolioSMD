@@ -3,6 +3,7 @@ body{
     background-image: url(../source/bcktrilhas.png);
     background-size: cover;
     background-repeat: no-repeat;  
+    overflow-y: hidden;
 }
 /*1920px = 98vw
 SEMPRE USAR VW, usando calc de regra de 3*/
@@ -30,6 +31,7 @@ SEMPRE USAR VW, usando calc de regra de 3*/
 }
 #balaotrilhas{
     font-family: 'Montserrat', sans-serif;
+    background-image: url("../source/balaobranco.png");
     grid-column-start: 2;
     grid-column-end: 7;
     grid-row-start: 2;
@@ -37,6 +39,8 @@ SEMPRE USAR VW, usando calc de regra de 3*/
     margin-top: 2.35vw;
     margin-left: 3.62vw;
     width: 38.69vw;
+    overflow-y: scroll;
+    overflow-x: none;
 }
 
 #balaotrilhas > img{
@@ -45,7 +49,7 @@ SEMPRE USAR VW, usando calc de regra de 3*/
 #balaotrilhas > h1{
     font-size: 3.88vw;
     margin-left: 7.86vw;
-    margin-top: -27vw;
+    margin-top: 2vw;
     padding-bottom: 3.27vw;
     font-weight: 600;
 }
@@ -60,11 +64,7 @@ SEMPRE USAR VW, usando calc de regra de 3*/
     margin-left: 5.97vw;
     margin-top: 2.50vw;
 }
-#frasebalaotrilhas{
-    width: 30.83vw;
-    height: 20vw;
-    overflow: scroll;
-}
+
 .localnav-trilhas{
     grid-column-start: 2;
     grid-column-end: 7;
