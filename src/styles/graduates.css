@@ -123,6 +123,7 @@ main {
 }
 
 .card {
+    margin-top: 5vw;
     background-color: #fff;
     width: 34.5vw;
     height: 40.1vw;

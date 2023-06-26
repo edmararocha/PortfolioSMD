@@ -54,19 +54,31 @@ function getDataGraduate(id) {
 
 function closePopup() {
   var popup = document.getElementById("popup");
-  // var content = document.getElementById("content-location");
-  // content.style.display = "flex";
   popup.classList.remove("show");
+
+  var content = document.getElementsByClassName("location-content");
+  console.log(content);
+  for (var i = 0; i < content.length; i++) {
+    content[i].style.display = "flex";
+  }
 }
 
+
 function openPopup(id) {
+  var content = document.getElementsByClassName("location-content");
+  console.log(content);
+  for (var i = 0; i < content.length; i++) {
+    content[i].style.display = "none";
+  }
+
   var popup = document.getElementById("popup");
   var closeButton = document.getElementById("but");
   closeButton.addEventListener("click", function () {
     closePopup();
   });
-  // var content = document.getElementsByClassName("content-location");
-  // content.style.display = "none";
+
+  console.log("oi");
+
   getDataGraduate(id);
   popup.classList.add("show");
 }
