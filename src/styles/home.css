@@ -19,6 +19,7 @@ body {
     background-image: url(../images/main_bg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    
 
 }
 
@@ -446,3 +447,19 @@ align-items: center;*/
     height: 12.08vw;
     background-image: url("../images/frog_hover.png");
 }
+*/
+#animation {
+      width: 80vw;
+      height: 100vh;
+      position: absolute;
+      overflow: hidden;
+    }
+
+    #animation img {
+      position: fixed;
+      width: 100vw;
+      height: 100%;  
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
