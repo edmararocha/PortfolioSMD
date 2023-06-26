@@ -126,7 +126,7 @@ main {
     }
 
     .logo-content {
-        width: 8vw;
+        width: 16vw;
         margin-left: 10vw;
     }
 
@@ -152,25 +152,23 @@ main {
     }
 
     .global-menu {
+        padding: 10vw;
         list-style-type: none;
         display: flex;
         flex-direction: column;
-    }
-
-    .global-menu {
-        list-style-type: none;
-        display: flex;
-        margin-top: 2.5vw;
+        margin-top: 5vw;
     }
 
     .global-menu-item {
+        margin: 0;
         list-style: none;
         color: white;
         font-size: larger;
         text-decoration: none;
         position: relative;
-        padding: 2.5vw;
-        text-align: left;
+        /* padding: 2vw; */
+        margin-bottom: 4vw;
+        text-align: start;
     }
 
     .global-menu-item a {
@@ -179,7 +177,8 @@ main {
 
     .toggle-btn {
         position: fixed;
-        top: 2vw;
+        font-size: 8vw;
+        top: 1vw;
         right: 5vw;
         cursor: pointer;
         color: #fff;
