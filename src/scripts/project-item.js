@@ -20,7 +20,6 @@ if (project) {
     var acess = document.getElementById("acess");
 
     iframeElement.src = project['videoUrl'];
-    acess.textContent = project['videoUrl'];
     acess.href = project['videoUrl'];
     description.textContent = project['description'];
     heldIn.textContent = project['heldIn'];

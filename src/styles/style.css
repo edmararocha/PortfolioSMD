@@ -136,10 +136,11 @@ main {
     }
 
     .hamburquer-menu-content {
+        margin: 0;
         position: fixed;
-        margin-top: -4.5vw;
-        right: -50vw;
-        width: 50vw;
+        margin-top: -6.5vw;
+        right: -65vw;
+        width: 65vw;
         height: 100vh;
         padding-top: 5vw;
         padding-bottom: 5vw;
@@ -173,6 +174,29 @@ main {
 
     .global-menu-item a {
         font-family: 'Rubik', sans-serif;
+    }
+
+     .global-menu-item::after {
+        /* bolinha */
+        content: "";
+        display: block;
+        width: 1.5vw;
+        height: 1.5vw;
+        background-color: transparent;
+        position: absolute;
+        top: 2.5vw;
+        left: -3.5vw;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+    }
+
+    .global-menu-item.active::after {
+        background-color: white;
+    }
+
+    .global-menu-item:not(.active):hover {
+        color: #cccccc;
     }
 
     .toggle-btn {

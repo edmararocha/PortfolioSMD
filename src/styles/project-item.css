@@ -99,13 +99,12 @@ html {
         font-size: xx-large;
     }
 
-    p,
     a {
-        margin-top: 0.25vw;
+        font-weight: 500;
     }
 
-    a {
-        font-size: medium;
+    p {
+        margin-top: 0.25vw;
     }
 
     #info {
@@ -118,6 +117,7 @@ html {
 
     #content-2 {
         padding-top: 10vw;
+        padding-bottom: 10vw;
     }
 
     #description {

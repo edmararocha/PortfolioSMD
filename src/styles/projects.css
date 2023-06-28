@@ -170,7 +170,7 @@ h1 {
 
     #character-content {
         margin-top: 8vw;
-        margin-left: 28vw;
+        margin-left: 10vw;
         display: flex;
         flex-direction: column;
     }
@@ -186,13 +186,13 @@ h1 {
     }
 
     .triangle {
-        margin-left: 40vw;
+        margin-left: 45vw;
         margin-top: -5vw;
         width: 0;
         height: 0;
         border-top: 4vw solid transparent;
         border-bottom: 4vw solid transparent;
-        border-left: 6.0vw solid #F2F2F2;
+        border-right: 4vw solid #F2F2F2;
     }
 
     .balloon>p {
@@ -202,7 +202,7 @@ h1 {
     }
 
     #img-dog {
-        margin-left: 26vw;
+        margin-left: 44vw;
         margin-top: 2vw;
         width: 26vw;
         height: 24vw;
@@ -215,7 +215,7 @@ h1 {
 
     #menu {
         padding: 0;
-        margin-top: 8vw;
+        margin-top: 12vw;
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;
@@ -230,7 +230,7 @@ h1 {
         list-style: none;
         text-align: center;
         font-size: 24px;
-        margin-right: 5vw;
+        margin-right: 10vw;
         /* margin-right: 1.66vw; */
         font-family: 'Fredoka', sans-serif;
     }
@@ -292,7 +292,7 @@ h1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10vw;
+        margin-top: 8vw;
     }
 
     .card-project {

@@ -56,7 +56,7 @@ function closePopup() {
   var popup = document.getElementById("popup");
   popup.classList.remove("show");
 
-  var content = document.getElementsByClassName("location-content");
+  var content = document.getElementsByClassName("graduate-location");
   console.log(content);
   for (var i = 0; i < content.length; i++) {
     content[i].style.display = "flex";
@@ -65,7 +65,7 @@ function closePopup() {
 
 
 function openPopup(id) {
-  var content = document.getElementsByClassName("location-content");
+  var content = document.getElementsByClassName("graduate-location");
   console.log(content);
   for (var i = 0; i < content.length; i++) {
     content[i].style.display = "none";
