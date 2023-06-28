@@ -1,4 +1,4 @@
-import {projects} from './data.js';
+import { projects } from './data.js';
 
 var urlParams = new URLSearchParams(window.location.search);
 var projectId = urlParams.get("id");
@@ -9,18 +9,36 @@ var project = projects.find(function (project) {
     return project.id == projectId;
 });
 
+function checkUrl(string) {
+    try {
+        let url = new URL(string)
+
+        return true;
+    } catch (err) {
+        return false;
+    }
+}
+
 if (project) {
     document.getElementById("title").textContent = project['name'];
 
-    var iframeElement = document.getElementById("iframe");
-    var iframeContent = document.getElementById("player");
+    var demoElement;
+    if (checkUrl(project['demoUrl'])) {
+        demoElement = document.createElement("iframe");
+        demoElement.frameBorder = "0";
+    } else {
+        demoElement = document.createElement("img");
+    }
+
+    var demoDiv = document.getElementById('demo');
     var description = document.getElementById("description");
     var heldIn = document.getElementById("held-in");
     var participants = document.getElementById("participants");
     var acess = document.getElementById("acess");
 
-    iframeElement.src = project['videoUrl'];
-    acess.href = project['videoUrl'];
+    demoElement.src = project['demoUrl'];
+    demoDiv.appendChild(demoElement);
+    acess.href = project['acess'];
     description.textContent = project['description'];
     heldIn.textContent = project['heldIn'];
     participants.textContent = project['partcipants'];

@@ -6,7 +6,7 @@ function templateCard(item) {
    var card = document.createElement('div');
    var cardImg = document.createElement('div');
    var cardTxt = document.createElement('div');
-   var img = document.createElement('iframe');
+   var img = document.createElement('img');
    var name = document.createElement('h4');
    var description = document.createElement('p');
    card.className = "card-project";
@@ -15,7 +15,7 @@ function templateCard(item) {
 
    name.innerHTML = item['name'];
    description.innerHTML = item['descriptionCard'];
-   img.src = item['videoUrl'];
+   img.src = item['imgUrl'];
 
    card.appendChild(cardImg);
    cardImg.appendChild(img);
@@ -41,8 +41,10 @@ function showList(id) {
    while (content[0].children.length > 0) removeAll();
 
    for (var i = 0; i < projects.length; i++) {
-      if (id == projects[i]['categoryId']) {
-         content[0].appendChild(templateCard(projects[i]));
+      for (var j = 0; j < projects[i]['categoryId'].length; j++) {
+         if (id == projects[i]['categoryId'][j]) {
+            content[0].appendChild(templateCard(projects[i]));
+         }
       }
    }
 }
