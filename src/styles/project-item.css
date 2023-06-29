@@ -66,6 +66,8 @@ html {
 
     #description {
         margin-top: 1vw;
+        column-count: 2;
+        column-gap: 20px;
     }
 
 }
