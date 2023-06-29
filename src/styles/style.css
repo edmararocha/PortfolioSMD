@@ -208,8 +208,8 @@ main {
         height: 1.5vw;
         background-color: transparent;
         position: absolute;
-        top: 2.5vw;
-        left: -3.5vw;
+        top: 4.5vw;
+        left: -2.5vw;
         transform: translateX(-50%);
         border-radius: 50%;
         transition: background-color 0.3s ease;
