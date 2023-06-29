@@ -119,32 +119,37 @@ function preloadImages(callback) {
   }
 }
 
+
 // Função para executar a animação
 function runAnimation() {
-  var animation = document.getElementById('animation');
+  
   animation.style.display = 'block'; // Removendo o display: none
   var images = animation.getElementsByTagName('img');
   var totalFrames = images.length;
   var currentFrame = 0;
-
+  var frameInterval = 8;
   function showFrame() {
     // Oculta todos os frames
     for (var i = 0; i < totalFrames; i++) {
+      
       images[i].style.opacity = 0;
     }
 
     // Exibe o próximo frame
     images[currentFrame].style.opacity = 1;
+    
     currentFrame++;
 
     if (currentFrame < totalFrames) {
-      setTimeout(showFrame, 1000 / 18); // Framerate de 24fps
+      setTimeout(showFrame, 1000 / frameInterval); // Framerate de 24fps
+      frameInterval+=2;
+      console.log(frameInterval)
     } else {
       setTimeout(function() {
         // Define a opacidade de todos os frames como 0 após o fim da animação
         for (var i = 0; i < totalFrames; i++) {
           images[i].style.opacity = 0;
-
+          
         }
         animation.parentNode.removeChild(animation);
 
@@ -162,6 +167,7 @@ window.onload = function() {
 
 document.addEventListener('scroll', () => {
   const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+
 
   if (!animationExecuted && window.scrollY >= scrollableHeight * 0.7 && window.scrollY <= scrollableHeight * 0.8) {
     preloadImages(runAnimation);
