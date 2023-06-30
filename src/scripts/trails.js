@@ -3,14 +3,11 @@ function mudartrilha(trilha){
     let corujadastrilhas = document.getElementById("corujadastrilhas");
     let h1dastrilhas = document.getElementById("h1dastrilhas");
     let frasebalaotrilhas = document.getElementById("frasebalaotrilhas");
-    let pselect = document.getElementById("select");
     let imgdesign = document.getElementById("imgdesign");
     let imgaudiovisual = document.getElementById("imgaudiovisual");
     let imgsistemas = document.getElementById("imgsistemas");
     let imgjogos = document.getElementById("imgjogos");
-    if(ntrilha>=1){
-      pselect.innerText="";
-    }
+
     console.log("Você está na trilha", ntrilha);
     if(ntrilha==1){
       corujadastrilhas.style.width="29.9vw";
@@ -23,8 +20,6 @@ function mudartrilha(trilha){
       h1dastrilhas.style.marginRight="2vw"
       h1dastrilhas.style.marginTop="-28vw";
       frasebalaotrilhas.innerText="A trilha de design digital engloba conhecimentos teóricos e práticos do Design e do desenvolvimento de tecnologias digitais interativas adquiridos ao longo do curso de forma a estimular a visão crítica do aluno. Ainda, abrange/compreende questões de experiência do usuário e interatividade no design digital.";
-      frasebalaotrilhas.style.fontSize="1.38vw";
-      frasebalaotrilhas.style.marginTop="-2.5vw";
       imgdesign.setAttribute("src", "../source/selecteddesign.png");
       imgdesign.style.height="6.5vw";
     } else{
