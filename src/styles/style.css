@@ -234,6 +234,7 @@ main {
     }
 
     #footer {
+        position: absolute;
         background: rgba(32, 32, 32, 0.10);
         padding-top: 1.15vw;
         padding-left: 6vw;
@@ -243,6 +244,8 @@ main {
         justify-content: space-around;
         align-items: center;
         color: white;
+        
+        
     }
 
     #footer a {
