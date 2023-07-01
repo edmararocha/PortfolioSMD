@@ -72,6 +72,7 @@ dog.addEventListener('mouseout', function() {
 // });}
 
 var imagePaths = [
+  '../src/images/home/cloud_frames/frame0.png',
   '../src/images/home/cloud_frames/frame1.png',
   '../src/images/home/cloud_frames/frame2.png',
   '../src/images/home/cloud_frames/frame3.png',
@@ -95,6 +96,11 @@ var imagePaths = [
   '../src/images/home/cloud_frames/frame22.png',
   '../src/images/home/cloud_frames/frame23.png',
   '../src/images/home/cloud_frames/frame24.png',
+  '../src/images/home/cloud_frames/frame25.png',
+  '../src/images/home/cloud_frames/frame26.png',
+  '../src/images/home/cloud_frames/frame27.png',
+  '../src/images/home/cloud_frames/frame28.png',
+  '../src/images/home/cloud_frames/frame29.png',
   // Adicione os caminhos das outras imagens aqui até o frame 24
 ];
 
