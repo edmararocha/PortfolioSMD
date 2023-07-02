@@ -5,28 +5,38 @@
 
 html {
     --grey: #404040;
-
+    --purple: #783D64;
     /* 1rem = 16px (User Agent) = 100% (User Agent) */
     /* 10px */
     scroll-behavior: smooth;
+    overflow-x: hidden;
 
 
 }
 
 /*1920px = 98vw
 SEMPRE USAR VW, usando calc de regra de 3*/
-body {
+.main-container {
     background-image: url(../images/main_bg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
 }
-
+body{
+    background-color: var(--purple);
+}
 button {
     cursor: pointer;
 }
 
+#home-main {
+    margin: auto;
+    width: 100vw;
+    
+}
+
 .grid {
+    margin-left: 10vw;
     min-height: 392vw;
     min-width: 80vw;
     display: grid;
@@ -332,7 +342,7 @@ align-items: center;*/
     grid-column-start: 7;
     grid-row-start: 31;
     margin-left: -7.2vw;
-    margin-top: -14.2vw;
+    margin-top: -13.9vw;
     width: 9.53vw;
     height: 15.72vw;
 }
@@ -341,7 +351,7 @@ align-items: center;*/
     grid-column-start: 7;
     grid-row-start: 30;
     margin-left: -2.6vw;
-    margin-top: -4.1vw;
+    margin-top: -5vw;
 }
 
 .dog_text {
@@ -397,10 +407,9 @@ align-items: center;*/
 }
 
 #cachorrocol8row33 {
-
     grid-column-start: 5;
     grid-row-start: 32;
-    margin-top: 2vw;
+    margin-top: 1.8vw;
     margin-left: .3vw;
     width: 5.61vw;
     height: 7.66vw;
@@ -427,7 +436,7 @@ align-items: center;*/
 #sapocol10row31 {
     grid-column-start: 11;
     grid-row-start: 32;
-    margin-left: -4.5vw;
+    margin-left: -4vw;
     margin-top: -.5vw;
     width: 6.28vw;
     height: 10.67vw;
@@ -448,3 +457,4 @@ align-items: center;*/
     height: 12.08vw;
     background-image: url("../images/frog_hover.png");
 }*/
+
