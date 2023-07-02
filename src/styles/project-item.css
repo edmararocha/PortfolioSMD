@@ -56,9 +56,17 @@ body {
         font-size: 2.76vw;
     }
 
-    p,
-    a {
-        margin-top: 0.25vw;
+    p {
+        margin-top: 0.5vw;
+    }
+
+    #acess {
+        background-color: #ffffff23;
+        padding-top: 0.2vw;
+        padding-bottom: 0.2vw;
+        padding-left: 0.4vw;
+        padding-right: 0.4vw;
+        border-radius: 0.4vw;
     }
 
     .desc-items {
@@ -124,7 +132,15 @@ body {
     }
 
     p {
-        margin-top: 0.25vw;
+        margin-top: 0.5vw;
+    }
+
+    #acess {
+        background-color: #ffffff23;
+        padding-bottom: 0.4vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        border-radius: 0.8vw;
     }
 
     #info {

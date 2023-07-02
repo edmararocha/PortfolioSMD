@@ -39,6 +39,7 @@ if (project) {
     demoElement.src = project['demoUrl'];
     demoDiv.appendChild(demoElement);
     acess.href = project['acess'];
+    acess.textContent = project['name'];
     description.textContent = project['description'];
     heldIn.textContent = project['heldIn'];
     participants.textContent = project['partcipants'];

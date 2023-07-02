@@ -10,9 +10,9 @@ body {
     background-repeat: no-repeat;
 }
 
-p {
+/* p {
     color: black;
-}
+} */
 
 li,
 h1 {
@@ -119,17 +119,20 @@ h1 {
 
     .card-project {
         width: 18.75vw;
-        /* height: 100%; */
         background-color: white;
         border-radius: 1.25vw;
     }
 
     .card-project:hover {
-        border: 0.2vw solid white;
+        /* border: 0.2vw solid white; */
+        background-color: #ffffff23;
+        color: white;
     }
 
     #card-img {
-        margin-right: 0.1vw;
+        padding-left: 0.6vw;
+        padding-right: 0.6vw;
+        padding-top: 0.6vw;
     }
 
     #card-img>img {
@@ -147,7 +150,7 @@ h1 {
     #card-text h4 {
         font-size: 1.1vw;
         margin: 0;
-        color: black;
+        /* color: black; */
     }
 
     #card-text p {
@@ -155,7 +158,7 @@ h1 {
         width: 100%;
         height: 100%;
         font-size: 1.1vw;
-        color: black;
+        /* color: black; */
     }
 
 }
@@ -259,39 +262,6 @@ h1 {
         align-items: flex-start;
     }
 
-    .card-project:hover {
-        border: 0.2vw solid white;
-    }
-
-    #card-img {
-        width: 100%;
-    }
-
-    #card-img>img {
-        width: 100%;
-        height: 100%;
-        border-top-left-radius: 1.25vw;
-        border-top-right-radius: 1.25vw;
-        overflow: hidden;
-    }
-
-    #card-text {
-        padding: 2.5vw;
-    }
-
-    #card-text h4 {
-        margin: 0;
-        color: black;
-    }
-
-    #card-text p {
-        margin-top: 1.5vw;
-        width: 100%;
-        height: 100%;
-        color: black;
-        padding-bottom: 1vw;
-    }
-
     .content {
         display: flex;
         flex-direction: column;
@@ -304,7 +274,42 @@ h1 {
         width: 80vw;
         /* height: 65vw; */
         background-color: white;
-        border-radius: 1.25vw;
+        border-radius: 4vw;
         margin-bottom: 8vw;
+    }
+
+    .card-project:hover {
+        /* border: 0.2vw solid white; */
+        background-color: #ffffff23;
+        color: white;
+    }
+
+    #card-img {
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+        padding-top: 2.5vw;
+    }
+
+    #card-img>img {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 4vw;
+        border-top-right-radius: 4vw;
+        overflow: hidden;
+    }
+
+    #card-text {
+        padding: 2.5vw;
+    }
+
+    #card-text h4 {
+        margin: 0;
+    }
+
+    #card-text p {
+        margin-top: 1.5vw;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 1vw;
     }
 }
