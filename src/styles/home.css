@@ -5,7 +5,7 @@
 
 html {
     --grey: #404040;
-    --purple: #783D64;
+    --green: #446958;
     /* 1rem = 16px (User Agent) = 100% (User Agent) */
     /* 10px */
     scroll-behavior: smooth;
@@ -25,7 +25,7 @@ SEMPRE USAR VW, usando calc de regra de 3*/
 
 }
 body{
-    background-color: var(--purple);
+    background-color: var(--green);
 }
 button {
     cursor: pointer;
