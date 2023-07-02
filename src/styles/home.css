@@ -492,12 +492,6 @@ align-items: center;*/
     transition: background-image 0.25s ease;
 }
 
-/*#botaoegressos:hover{
-    width: 6.77vw;
-    height: 12.08vw;
-    background-image: url("../images/frog_hover.png");
-}
-*/
 #animation {
       width: 80vw;
       height: 100vh;
