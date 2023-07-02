@@ -26,7 +26,7 @@ const graduates = [
     {
         id: 2,
         name: "Espedito Roza",
-        imgUrl: "../images/graduates/2.jpg",
+        imgUrl: "../images/graduates/2.jpeg",
         location: "Fortaleza",
         positionInMap: ['38.5vw', '42vw'],
         graduateYear: "2021",

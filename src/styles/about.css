@@ -1,0 +1,145 @@
+body {
+    background-image: url(../images/about_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+li,
+h1,
+h2,
+p {
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 4.42vw;
+    font-weight: bold;
+    margin-top: 2.96vw;
+}
+
+main {
+    margin-top: 6.5vw;
+}
+
+@media (min-width: 600px) {
+    p {
+        margin-top: 2vw;
+    }
+
+    .content {
+        margin-top: 3vw;
+        display: grid;
+        grid-template-columns: 36.5vw 36.5vw;
+        grid-column-gap: 3vw;
+        grid-row-gap: 3vw;
+        margin-bottom: 3.33vw;
+    }
+
+    .student {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .student img {
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        margin-right: 1vw;
+    }
+
+    .student p {
+        margin-top: 0.8vw;
+    }
+
+    .teacher {
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+    }
+
+    .teacher img {
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        margin-right: 1vw;
+    }
+
+    .teacher p {
+        margin-top: 0.8vw;
+    }
+
+    #footer {
+        justify-content: end;
+    }
+}
+
+@media (max-width: 599px) {
+    * {
+        font-size: large;
+    }
+
+    p {
+        margin-top: 8vw;
+    }
+
+    main {
+        margin-top: 16vw;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    .student {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 12vw;
+    }
+
+    .student img {
+        width: 40vw;
+        height: 40vw;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 4vw;
+    }
+
+    .student p {
+        margin-top: 2vw;
+    }
+
+    .teacher {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 12vw;
+    }
+
+    .teacher img {
+        width: 60vw;
+        height: 60vw;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 4vw;
+    }
+
+    .teacher p {
+        margin-top: 2vw;
+    }
+
+    #footer {
+        padding: 4vw;
+        justify-content: end;
+    }
+}

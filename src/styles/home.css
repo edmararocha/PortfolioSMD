@@ -5,17 +5,18 @@
 
 html {
     --grey: #404040;
-
+    --purple: #783D64;
     /* 1rem = 16px (User Agent) = 100% (User Agent) */
     /* 10px */
     scroll-behavior: smooth;
+    overflow-x: hidden;
 
 
 }
 
 /*1920px = 98vw
 SEMPRE USAR VW, usando calc de regra de 3*/
-body {
+.main-container {
     background-image: url(../images/main_bg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -23,12 +24,21 @@ body {
     
 
 }
-
+body{
+    background-color: var(--purple);
+}
 button {
     cursor: pointer;
 }
 
+#home-main {
+    margin: auto;
+    width: 100vw;
+    
+}
+
 .grid {
+    margin-left: 10vw;
     min-height: 392vw;
     min-width: 80vw;
     display: grid;
@@ -106,13 +116,15 @@ button {
     0% {
         opacity: 1;
     }
-    
+
     50% {
         background-image: url('../images/owl_half.png');
     }
+
     75% {
         opacity: 1;
     }
+
     100% {
         background-image: url('../images/owl_hover.png');
         opacity: 1;
@@ -165,13 +177,13 @@ align-items: center;*/
     margin-bottom: 1.04vw;
 }
 
-#welcome{
+#welcome {
     font-weight: 400;
 }
 
 .triangle {
     grid-column-start: 8;
-    grid-column-end:8;
+    grid-column-end: 8;
     grid-row-start: 3;
     grid-row-end: 3;
     align-items: center;
@@ -184,7 +196,7 @@ align-items: center;*/
     border-left: 2.0vw solid #F2F2F2;
 }
 
-.balloon> p {
+.balloon>p {
     font-weight: 400;
     max-width: 18.02vw;
     min-width: 18.02vw;
@@ -249,7 +261,7 @@ align-items: center;*/
 #floating-text1 {
     color: white;
     grid-column-start: 1;
-    
+
     grid-row-start: 7;
     grid-row-end: 7;
     width: 49vw;
@@ -285,13 +297,13 @@ align-items: center;*/
 }
 
 #floating-text2>p>span {
-   font-weight: 500;
+    font-weight: 500;
 }
 
 #floating-text3 {
     color: white;
     grid-column-start: 0;
-    
+
     grid-row-start: 16;
     grid-row-end: 16;
 
@@ -320,7 +332,7 @@ align-items: center;*/
     opacity: 1;
     transition: width 0.3s, height 0.3s, margin-top 0.3s, margin-left 0.3s;
 
-    &:hover{
+    &:hover {
         width: 9.53vw;
         height: 8.82vw;
         margin-top: -1.08vw;
@@ -341,7 +353,7 @@ align-items: center;*/
     grid-column-start: 7;
     grid-row-start: 31;
     margin-left: -7.2vw;
-    margin-top: -14.2vw;
+    margin-top: -13.9vw;
     width: 9.53vw;
     height: 15.72vw;
 }
@@ -350,7 +362,7 @@ align-items: center;*/
     grid-column-start: 7;
     grid-row-start: 30;
     margin-left: -2.6vw;
-    margin-top: -4.1vw;
+    margin-top: -5vw;
 }
 
 .dog_text {
@@ -371,15 +383,15 @@ align-items: center;*/
     animation: float_text 1s ease-in-out infinite;
 }
 
-.ellipsis-text.projects{
+.ellipsis-text.projects {
     width: 8.18vw;
 }
 
-.ellipsis-text.trails{
+.ellipsis-text.trails {
     width: 6.82vw;
 }
 
-.ellipsis-text.graduates{
+.ellipsis-text.graduates {
     width: 8.39vw;
 }
 
@@ -446,7 +458,6 @@ align-items: center;*/
 }
 
 #cachorrocol8row33 {
-
     grid-column-start: 5;
     grid-row-start: 32;
     margin-top: 1vw;
@@ -476,7 +487,7 @@ align-items: center;*/
 #sapocol10row31 {
     grid-column-start: 11;
     grid-row-start: 32;
-    margin-left: -4.5vw;
+    margin-left: -4vw;
     margin-top: -.5vw;
     width: 6.28vw;
     height: 10.67vw;
@@ -492,12 +503,9 @@ align-items: center;*/
     transition: background-image 0.25s ease;
 }
 
-/*#botaoegressos:hover{
-    width: 6.77vw;
-    height: 12.08vw;
-    background-image: url("../images/frog_hover.png");
-}
-*/
+
+
+
 #animation {
       width: 80vw;
       height: 100vh;
@@ -515,3 +523,5 @@ align-items: center;*/
       left: 0;
       opacity: 0;
     }
+
+

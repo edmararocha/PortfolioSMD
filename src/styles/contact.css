@@ -1,0 +1,39 @@
+html {
+    background: linear-gradient(180deg, #1f2444 28.13%, #2e265f 72.4%, #3e2f4d 94.79%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+p {
+    color: black;
+}
+
+li,
+h1 {
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 4.42vw;
+    font-weight: bold;
+    margin-top: 2.96vw;
+}
+
+main {
+    margin-top: 6.5vw;
+}
+
+@media (max-width: 599px) {
+    * {
+        font-size: large;
+    }
+
+    main {
+        margin-top: 16vw;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+}
