@@ -236,16 +236,7 @@ main {
     }
 
     #footer {
-        position: absolute;
-        background: rgba(32, 32, 32, 0.10);
-        padding-top: 1.15vw;
-        padding-left: 6vw;
-        padding-right: 6vw;
-        padding-bottom: 1.15vw;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
+        display: none;
 
 
     }

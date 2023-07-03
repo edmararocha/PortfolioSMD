@@ -69,6 +69,67 @@ html {
         grid-row-start: 3;
         grid-row-end: 3;
     }
+    #floating-text1 {
+        color: white;
+        grid-column-start: 1;
+    
+        grid-row-start: 7;
+        grid-row-end: 7;
+        width: 70vw;
+        height: 9.39vw;
+        font-weight: 400;
+    }
+    
+    #floating-text1>p {
+        font-size: 18px;
+    }
+    
+    #floating-text1>p>span {
+        font-size:28px
+    }
+
+    #floating-text2 {
+        color: white;
+        grid-column-start: 4;
+        grid-column-end: 12;
+        grid-row-start: 12;
+        grid-row-end: 12;
+        font-weight: 400;
+        width: 60.75vw;
+        margin-left: 4.53vw;
+    }
+    
+    #floating-text2>p {
+        font-size: 18px;
+    }
+    
+    
+    #floating-text2>p>span {
+        font-weight: 500;
+    }
+
+    #floating-text3 {
+        color: white;
+        grid-column-start: 0;
+    
+        grid-row-start: 16;
+        grid-row-end: 16;
+    
+        width: 68.20vw;
+        font-weight: 400;
+    }
+    
+    #floating-text3>p {
+        font-size: 18px;
+    }
+    
+    #floating-text3>p>span {
+        font-weight: 500;
+    }
+
+    #arrow {
+        display: none;
+    }
 }
 
 @media (min-width: 600px) {
@@ -125,6 +186,78 @@ html {
         border-top: 1.04vw solid transparent;
         border-bottom: 1.04vw solid transparent;
         border-left: 2.0vw solid #F2F2F2;
+    }
+    #floating-text1 {
+        color: white;
+        grid-column-start: 1;
+    
+        grid-row-start: 7;
+        grid-row-end: 7;
+        width: 49vw;
+        height: 9.39vw;
+        font-weight: 400;
+    }
+    
+    #floating-text1>p {
+        font-size: 1.88vw;
+    }
+    
+    #floating-text1>p>span {
+        font-size: 3.65vw
+    }
+
+    #floating-text2 {
+        color: white;
+        grid-column-start: 5;
+        grid-column-end: 12;
+        grid-row-start: 12;
+        grid-row-end: 12;
+        font-weight: 400;
+        width: 48.75vw;
+        margin-left: 4.53vw;
+    }
+    
+    #floating-text2>p {
+        font-size: 1.88vw;
+    }
+    
+    
+    #floating-text2>p>span {
+        font-weight: 500;
+    }
+
+    #floating-text3 {
+        color: white;
+        grid-column-start: 0;
+    
+        grid-row-start: 16;
+        grid-row-end: 16;
+    
+        width: 51.20vw;
+        font-weight: 400;
+    }
+    
+    #floating-text3>p {
+        font-size: 1.88vw;
+    }
+    
+    #floating-text3>p>span {
+        font-weight: 500;
+    }
+
+    #arrow {
+        grid-column-start: 6;
+        width: 6.02vw;
+        height: 6.42vw;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-top: 6.8vw;
+        margin-left: 1.1vw;
+    
+    
+    
+        /*REVISAR ESSE MARGIN*/
     }
 }
 
@@ -295,20 +428,7 @@ align-items: center;*/
     font-size: 1.63vw;
 } */
 
-#arrow {
-    grid-column-start: 6;
-    width: 6.02vw;
-    height: 6.42vw;
-    grid-column-end: 6;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin-top: 6.8vw;
-    margin-left: 1.1vw;
 
-
-
-    /*REVISAR ESSE MARGIN*/
-}
 
 #botaoscrollprabaixo>img {
     width: 6.02vw;
@@ -323,66 +443,11 @@ align-items: center;*/
     height: 9.42vw;
 }
 
-#floating-text1 {
-    color: white;
-    grid-column-start: 1;
 
-    grid-row-start: 7;
-    grid-row-end: 7;
-    width: 49vw;
-    height: 9.39vw;
-    font-weight: 400;
-}
 
-#floating-text1>p {
-    font-size: 1.88vw;
-}
 
-#floating-text1>p>span {
-    font-size: 3.65vw
-}
 
-#floating-text2 {
-    color: white;
-    grid-column-start: 5;
-    grid-column-end: 12;
-    grid-row-start: 12;
-    grid-row-end: 12;
-    font-weight: 400;
-    width: 48.75vw;
-    margin-left: 4.53vw;
-}
 
-#floating-text2>p {
-    font-size: 1.88vw;
-}
-
-#floating-text2>p {
-    font-size: 1.88vw;
-}
-
-#floating-text2>p>span {
-    font-weight: 500;
-}
-
-#floating-text3 {
-    color: white;
-    grid-column-start: 0;
-
-    grid-row-start: 16;
-    grid-row-end: 16;
-
-    width: 51.20vw;
-    font-weight: 400;
-}
-
-#floating-text3>p {
-    font-size: 1.88vw;
-}
-
-#floating-text3>p>span {
-    font-weight: 500;
-}
 
 
 
