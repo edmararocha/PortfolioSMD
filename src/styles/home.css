@@ -250,7 +250,7 @@ button {
       transform: translateX(-90.38vw);
     }
     100% {
-      transform: translateX(calc(100vw));
+      transform: translateX(100vw);
     }
   }
 
