@@ -24,9 +24,9 @@ html {
         
         align-items: center;
         margin-top: -12vw;
-        height: 24.86vw;
+        height: 20.86vw;
         width: 36.22vw;
-        background-image: url(../images/home/text_image.png);
+        background-color: #F2F2F2;
         background-size: cover;
         border-radius: 0.52vw;
         padding: 0.52vw;
@@ -36,9 +36,9 @@ html {
         font-weight: 500;
         width: 33vw;
         
-        padding-top: 5vw;
+        padding-top: 4.7vw;
         padding-left: 2.64vw;
-        font-size: 2.78vw;
+        font-size: 16px;
     }
 
     #dog {
@@ -56,7 +56,18 @@ html {
     
     }
     .triangle {
-        display: none;
+        margin-top: -18.6vw;
+        margin-left: 3.8vw;
+        rotate: 240deg;
+        width: 0;
+        height: 0;
+        border-top: 2vw solid transparent;
+        border-bottom: 4vw solid transparent;
+        border-right: 6vw solid #F2F2F2;
+        grid-column-start: 8;
+        grid-column-end: 8;
+        grid-row-start: 3;
+        grid-row-end: 3;
     }
 }
 
