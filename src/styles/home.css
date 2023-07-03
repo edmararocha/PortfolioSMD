@@ -75,7 +75,7 @@ html {
     
         grid-row-start: 7;
         grid-row-end: 7;
-        width: 70vw;
+        width: 92vw;
         height: 9.39vw;
         font-weight: 400;
     }
@@ -85,7 +85,8 @@ html {
     }
     
     #floating-text1>p>span {
-        font-size:28px
+        font-size:26px
+
     }
 
     #floating-text2 {
