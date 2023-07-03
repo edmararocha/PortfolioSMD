@@ -250,8 +250,7 @@ button {
       transform: translateX(-90.38vw);
     }
     100% {
-      transform: translateX(100vw);
-
+      transform: translateX(calc(100vw));
     }
   }
 
@@ -480,8 +479,7 @@ align-items: center;*/
     height: 12.34vw;
     grid-row-start: 22;
     grid-column-start: 1;
-    animation: moverNuvem 10s infinite;
-    animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    animation: moverNuvem 15s linear infinite;
 }
 
 .cloud-2{
@@ -492,7 +490,7 @@ align-items: center;*/
     margin-top: -8.39vw;
     grid-row-start: 24;
     grid-column-start: 7;
-    animation: moverNuvem 10s ease infinite;
+    animation: moverNuvem 8s linear infinite;
 }
 
 .cloud-3{
@@ -503,7 +501,7 @@ align-items: center;*/
     margin-top: -3.07vw;
     grid-row-start: 25;
     grid-column-start: 1;
-    animation: moverNuvem 22s ease infinite;
+    animation: moverNuvem 15s linear infinite;
     animation-direction: reverse;
 }
 
@@ -514,7 +512,7 @@ align-items: center;*/
     height: 10.63vw;
     grid-row-start: 26;
     grid-column-start: 8;
-    animation: moverNuvem 18s ease infinite;
+    animation: moverNuvem 12s linear infinite;
 }
 
 
