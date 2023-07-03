@@ -4,12 +4,10 @@ html {
     min-height: 100vh;
 }
 
-p {
-    color: black;
-}
-
 li,
-h1 {
+h1,
+p,
+label {
     color: white;
 }
 
@@ -24,6 +22,94 @@ main {
     margin-top: 6.5vw;
 }
 
+@media (min-width: 600px) {
+    .content {
+        margin-top: 2vw;
+        margin-bottom: 4vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .text-content {
+        margin-right: 1fr;
+    }
+
+    p {
+        margin-bottom: 1.5vw;
+    }
+
+    .form-content {
+        width: 40vw;
+    }
+
+    .field-item {
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        margin-bottom: 2vw;
+    }
+
+    .input {
+        margin-top: 1vw;
+        padding: 1.5vw 1vw;
+        border-radius: 0.5vw;
+        border: none;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: bold;
+    }
+
+    input:focus {
+        outline: 2px solid #1f2444;
+    }
+
+    .message-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .message-input {
+        margin-top: 1vw;
+        width: 40vw;
+        height: 20vw;
+        border-radius: 0.5vw;
+        border: none;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: bold;
+    }
+
+    .footer-message {
+        margin-top: -6vw;
+        width: 90%;
+        padding: 0.5vw 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 0 0 0.5vw 0.5vw;
+        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-message h5 {
+        color: #5A69A4;
+    }
+
+    .footer-message button {
+        display: inline-block;
+        padding: 1.5vw 1vw 1vw 1vw;
+        background-image: url("../images/button_bg.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: bold;
+    }
+}
+
 @media (max-width: 599px) {
     * {
         font-size: large;
@@ -35,5 +121,91 @@ main {
 
     h1 {
         font-size: 8vw;
+    }
+
+    .content {
+        margin-top: 8vw;
+        margin-bottom: 12vw;
+    }
+
+    .text-content {
+        margin-right: 1fr;
+    }
+
+    p {
+        margin-bottom: 6vw;
+    }
+
+    .form-content {
+        margin-top: 8vh;
+        width: 80vw;
+    }
+
+    .field-item {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-bottom: 8vw;
+    }
+
+    .input {
+        margin-top: 4vw;
+        padding: 4vw 2vw;
+        border-radius: 1vw;
+        border: none;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: bold;
+    }
+
+    input:focus {
+        outline: 2px solid #1f2444;
+    }
+
+    .message-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .message-input {
+        margin-top: 4vw;
+        width: 80vw;
+        height: 40vh;
+        border-radius: 1vw;
+        border: none;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: bold;
+    }
+
+    .footer-message {
+        margin-top: -10vh;
+        width: 85%;
+        padding: 1vw 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 0 0 1vw 1vw;
+        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-message h5 {
+        color: #5A69A4;
+        font-size: medium;
+    }
+
+    .footer-message button {
+        display: inline-block;
+        padding: 5vw 2.5vw 4vw 2.5vw;
+        background-image: url("../images/button_bg.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: bold;
+        font-size: medium;
     }
 }
