@@ -46,7 +46,48 @@
     </header>
     <main>
         <h1>FALE CONOSCO</h1>
-        <div></div>
+        <div class="content">
+            <div class="text-content">
+                <p>Quer conversar conosco para adicionar seu projeto no site?
+                    </br>Existe alguma informação que esteja incorreta?</p>
+                <p>Contate-nos pelo formulário ou pelas redes sociais.</p>
+                <p>Secretaria do SMD:
+                    </br>e-mail@virtual.ufc.br</p>
+                <p>Desenvolvedores:
+                    </br>codesignsmd@gmail.com</p>
+            </div>
+            <div class="form-content">
+                <form action="">
+                    <div class="field-item">
+                        <label for="name">Nome:</label>
+                        <input class="input" name="name" type="text">
+                    </div>
+                    <div class="field-item">
+                        <label for="email">E-mail:</label>
+                        <input class="input" name="email" type="email">
+                    </div>
+                    <div class="field-item">
+                        <label for="subject">Assunto:</label>
+                        <select class="input" name="subject" id="subject">
+                            <option value="1">Enviar projeto</option>
+                            <option value="2">Enviar dado de egresso</option>
+                            <option value="3">Atualizar informações</option>
+                            <option value="4">Outro</option>
+                        </select>
+                    </div>
+                    <div class="field-item-message">
+                        <label for="message">Mensagem:</label>
+                        <div class="message-content">
+                            <input class="message-input" name="message" type="text">
+                            <div class="footer-message">
+                                <h5>XX / 500 caracteres</h5>
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 </body>
 

@@ -16,7 +16,9 @@ h5 {
 }
 
 p,
-a {
+a,
+label,
+input {
     font-family: 'Fredoka', sans-serif;
     font-weight: 300;
 }
@@ -244,8 +246,8 @@ main {
         justify-content: space-around;
         align-items: center;
         color: white;
-        
-        
+
+
     }
 
     #footer a {
