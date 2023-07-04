@@ -71,60 +71,9 @@ dog.addEventListener('mouseout', function() {
 
 // });}
 
-var imagePaths = [
-  '../src/images/home/cloud_frames/frame0.png',
-  '../src/images/home/cloud_frames/frame1.png',
-  '../src/images/home/cloud_frames/frame2.png',
-  '../src/images/home/cloud_frames/frame3.png',
-  '../src/images/home/cloud_frames/frame4.png',
-  '../src/images/home/cloud_frames/frame5.png',
-  '../src/images/home/cloud_frames/frame6.png',
-  '../src/images/home/cloud_frames/frame7.png',
-  '../src/images/home/cloud_frames/frame8.png',
-  '../src/images/home/cloud_frames/frame9.png',
-  '../src/images/home/cloud_frames/frame10.png',
-  '../src/images/home/cloud_frames/frame12.png',
-  '../src/images/home/cloud_frames/frame13.png',
-  '../src/images/home/cloud_frames/frame14.png',
-  '../src/images/home/cloud_frames/frame15.png',
-  '../src/images/home/cloud_frames/frame16.png',
-  '../src/images/home/cloud_frames/frame17.png',
-  '../src/images/home/cloud_frames/frame18.png',
-  '../src/images/home/cloud_frames/frame19.png',
-  '../src/images/home/cloud_frames/frame20.png',
-  '../src/images/home/cloud_frames/frame21.png',
-  '../src/images/home/cloud_frames/frame22.png',
-  '../src/images/home/cloud_frames/frame23.png',
-  '../src/images/home/cloud_frames/frame24.png',
-  '../src/images/home/cloud_frames/frame25.png',
-  '../src/images/home/cloud_frames/frame26.png',
-  '../src/images/home/cloud_frames/frame27.png',
-  '../src/images/home/cloud_frames/frame28.png',
-  '../src/images/home/cloud_frames/frame29.png',
-  // Adicione os caminhos das outras imagens aqui até o frame 24
-];
+
 
 var animationExecuted = false;
-
-// Função para pré-carregar as imagens
-function preloadImages(callback) {
-  var loadedImages = 0;
-  var totalImages = imagePaths.length;
-
-  function imageLoaded() {
-    loadedImages++;
-    if (loadedImages === totalImages) {
-      callback();
-    }
-  }
-
-  for (var i = 0; i < totalImages; i++) {
-    var img = new Image();
-    img.onload = imageLoaded;
-    img.src = imagePaths[i];
-  }
-}
-
 
 // Função para executar a animação
 function runAnimation() {
@@ -177,7 +126,7 @@ window.addEventListener("DOMContentLoaded",()=> {
   
   
     if (!animationExecuted && window.scrollY >= scrollableHeight * 0.7 && window.scrollY <= scrollableHeight * 0.8) {
-      preloadImages(runAnimation);
+      runAnimation();
     }
   });
 });
