@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/contact.css">
     <script src="../scripts/script.js" defer></script>
+    <script src="../scripts/contact.js" type="module" defer></script>
 </head>
 
 <body>
@@ -57,32 +58,33 @@
                     </br>codesignsmd@gmail.com</p>
             </div>
             <div class="form-content">
-                <form action="">
+                <form action="" id="form" method="post">
                     <div class="field-item">
-                        <label for="name">Nome:</label>
-                        <input class="input" name="name" type="text">
+                        <label for="name" id="name-label">Nome:</label>
+                        <input class="input" name="name" id="name" type="text" placeholder="Seu nome">
                     </div>
                     <div class="field-item">
                         <label for="email">E-mail:</label>
-                        <input class="input" name="email" type="email">
+                        <input class="input" name="email" id="email" type="email" placeholder="Seu email">
                     </div>
                     <div class="field-item">
                         <label for="subject">Assunto:</label>
                         <select class="input" name="subject" id="subject">
-                            <option value="1">Enviar projeto</option>
-                            <option value="2">Enviar dado de egresso</option>
-                            <option value="3">Atualizar informações</option>
-                            <option value="4">Outro</option>
+                            <option value="0">Enviar um projeto</option>
+                            <option value="1">Enviar dados de um egresso</option>
+                            <option value="2">Atualizar informações</option>
+                            <option value="3">Outro</option>
                         </select>
                     </div>
-                    <div class="field-item-message">
+                    <div class="field-item">
                         <label for="message">Mensagem:</label>
                         <div class="message-content">
-                            <input class="message-input" name="message" type="text">
+                            <textarea class="input" id="message" name="message" type="text" maxlength="500" placeholder="Digite sua Mensagem"></textarea>
                             <div class="footer-message">
-                                <h5>XX / 500 caracteres</h5>
-                                <button type="submit">Enviar</button>
+                                <p id="text-count"><span id="count">0</span> / 500 caracteres</p>
+                                <button id="submit" type="submit">Enviar</button>
                             </div>
+                            <p id="feedback"></p>
                         </div>
                     </div>
                 </form>
