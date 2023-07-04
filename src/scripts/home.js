@@ -170,7 +170,8 @@ function runAnimation() {
 // Carregar as imagens antes de executar a animação
 
 // Carregar as imagens antes de executar a animação
-window.onload = function() {
+// Carregar as imagens antes de executar a animação
+window.addEventListener("DOMContentLoaded",()=> {
   document.addEventListener('scroll', () => {
     const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
   
@@ -179,7 +180,7 @@ window.onload = function() {
       preloadImages(runAnimation);
     }
   });
-};
+});
 
 // window.onload = function() {
 // };
