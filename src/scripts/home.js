@@ -168,15 +168,28 @@ function runAnimation() {
 }
 
 // Carregar as imagens antes de executar a animação
+
+// Carregar as imagens antes de executar a animação
 window.onload = function() {
+  document.addEventListener('scroll', () => {
+    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+  
+  
+    if (!animationExecuted && window.scrollY >= scrollableHeight * 0.7 && window.scrollY <= scrollableHeight * 0.8) {
+      preloadImages(runAnimation);
+    }
+  });
 };
 
-document.addEventListener('scroll', () => {
-  const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+// window.onload = function() {
+// };
+
+// document.addEventListener('scroll', () => {
+//   const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
 
 
-  if (!animationExecuted && window.scrollY >= scrollableHeight * 0.7 && window.scrollY <= scrollableHeight * 0.8) {
-    preloadImages(runAnimation);
-  }
-});
+//   if (!animationExecuted && window.scrollY >= scrollableHeight * 0.7 && window.scrollY <= scrollableHeight * 0.8) {
+//     preloadImages(runAnimation);
+//   }
+// });
 
