@@ -131,6 +131,15 @@ window.addEventListener("DOMContentLoaded",()=> {
   });
 });
 
+function voltareScrollar() {
+  window.location.href = "index.html";
+}
+function scrollarprabaixo() {
+  animationExecuted = true;
+  scrollTo(0, 6500);
+  
+}
+
 // window.onload = function() {
 // };
 

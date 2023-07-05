@@ -1,9 +1,4 @@
-function voltareScrollar() {
-  window.location.href = "index.html";
-}
-function scrollarprabaixo() {
-  scrollTo(0, 6500);
-}
+
 
 var path = window.location.pathname;
 var menuItems = document.getElementsByClassName("global-menu-item");
