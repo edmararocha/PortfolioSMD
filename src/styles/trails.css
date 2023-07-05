@@ -34,10 +34,10 @@ SEMPRE USAR VW, usando calc de regra de 3*/
     background-image: url("../source/balaobranco.png");
     grid-column-start: 2;
     grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    margin-top: 2.35vw;
+    grid-row-start: 3;
+    grid-row-end: 6;
     margin-left: 3.62vw;
+    margin-top: -8.2vw;
     width: 38.69vw;
     overflow-y: scroll;
     overflow-x: none;
@@ -49,7 +49,7 @@ SEMPRE USAR VW, usando calc de regra de 3*/
 #balaotrilhas > h1{
     font-size: 3.88vw;
     margin-left: 7.86vw;
-    margin-top: 2vw;
+    margin-top: 2.4vw;
     padding-bottom: 3.27vw;
     font-weight: 600;
 }
@@ -68,13 +68,13 @@ SEMPRE USAR VW, usando calc de regra de 3*/
 .localnav-trilhas{
     grid-column-start: 3;
     grid-column-end: 7;
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
     justify-items: center;
     justify-content: center;
     list-style-type: none;
-    margin-top: -4.25vw;
-    margin-left: 3.7vw;
+    margin-top: 5vw;
+    margin-left: 3.84vw;
     width: 9.78vw;
     height: fit-content;
 }
@@ -87,6 +87,22 @@ SEMPRE USAR VW, usando calc de regra de 3*/
     
 }
 .localnav-trilhas img{
-    width: 9.78vw;
-    height: 2.65vw;
+    width: 9.65vw;
+    height: 4.2875vw;
+}
+
+#trilhaisselected{
+    display: none;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-left: -4.6vw;
+    margin-top: -8.4vw;
+    width: 38.68958333333333vw;
+    height: 2.14375vw;
+}
+#selectedimg{
+    width: 38.68958333333333vw;
+    height: 2.14375vw;
 }
