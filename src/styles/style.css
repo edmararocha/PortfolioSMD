@@ -2,10 +2,8 @@
     margin: 0;
 }
 
-main {
-    margin: auto;
-    width: 80vw;
-}
+
+
 
 h1,
 h2,
@@ -37,6 +35,11 @@ main {
 }
 
 @media (min-width:600px) {
+    main {
+        margin: auto;
+        width: 80vw;
+    }
+
     .global-menu-hamburguer {
         display: none;
     }
@@ -136,6 +139,11 @@ main {
         display: none;
     }
 
+    main {
+        margin: auto;
+        width: 90vw;
+    }
+
     .global-nav {
         top: 0;
         background-color: rgba(32, 32, 32, 0.3);
@@ -152,7 +160,7 @@ main {
 
     .logo-content {
         width: 16vw;
-        margin-left: 10vw;
+        margin-left: 5vw;
     }
 
     #smd-logo {

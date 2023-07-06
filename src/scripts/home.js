@@ -22,29 +22,6 @@ frog.addEventListener('mouseout', function() {
 });}
 
 
-// const owl = document.querySelector('#botaotrilhas')
-// const corujaLevantando = new Image();
-
-// const corujaNormal = './src/images/owl_trails.png'
-
-// corujaLevantando.src = './src/images/owl_hover.png'
-// corujaLevantando.onload = function(){
-// owl.addEventListener('mouseover', function() {
-//   this.style.backgroundImage = `url(${corujaLevantando.src})`;
-//   this.style.width = "9.53vw";
-//   this.style.height = "8.82vw";
-//   this.style.marginLeft = "-2vw"
-//   this.style.paddingTop = '-6vw'
-  
-// });
-//     //    width: 5.83vw;
-//     // height: 12.08vw;
-// owl.addEventListener('mouseout', function() {
-//   this.style.backgroundImage = `url(${corujaNormal})`;
-//   this.style.height = "6.82vw";
-  
-
-// });}
 
 
 
@@ -115,15 +92,38 @@ function scrollarprabaixo() {
   
 }
 
-// window.onload = function() {
-// };
 
-// document.addEventListener('scroll', () => {
-//   const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+const corujaElement = document.querySelector('#botaotrilhas');
+const frames = document.querySelectorAll('.frame');
+const animationDuration = 300; // Duração total da animação em milissegundos
+const frameDuration = animationDuration / frames.length;
+let currentFrame = 0;
+let animationTimeout;
 
+function showFrame(frameIndex) {
+    frames.forEach((frame, index) => {
+        frame.classList.toggle('visible', index === frameIndex);
+    });
+}
 
-//   if (!animationExecuted && window.scrollY >= scrollableHeight * 0.7 && window.scrollY <= scrollableHeight * 0.8) {
-//     preloadImages(runAnimation);
-//   }
-// });
+function playAnimation() {
+    showFrame(currentFrame);
+    currentFrame++;
+    if (currentFrame < frames.length) {
+        animationTimeout = setTimeout(playAnimation, frameDuration);
+    }
+}
 
+showFrame(currentFrame);
+
+corujaElement.addEventListener('mouseover', () => {
+    currentFrame = 0;
+    clearTimeout(animationTimeout);
+    playAnimation();
+});
+
+corujaElement.addEventListener('mouseout', () => {
+    clearTimeout(animationTimeout);
+    currentFrame = 0;
+    showFrame(currentFrame);
+});

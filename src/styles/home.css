@@ -16,6 +16,15 @@ html {
 }
 
 @media (max-width: 599px) {
+    .grid {
+        margin-left: 5vw;
+        min-height: 392vw;
+        min-width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(12, 6.66vw);
+        grid-template-rows: repeat(32, 1fr);
+    }
+    
     .balloon {
         /* position: relative; */
         grid-column-start: 4;
@@ -75,12 +84,12 @@ html {
     }
     #floating-text1 {
         color: white;
-        margin-left: -3vw;
+        /* margin-left: -3vw; */
         grid-column-start: 1;
         grid-column-end: 12;
         grid-row-start: 7;
         grid-row-end: 7;
-        width: 94vw;
+        width: 90vw;
         height: 9.39vw;
         font-weight: 400;
     }
@@ -96,13 +105,13 @@ html {
 
     #floating-text2 {
         color: white;
-        grid-column-start: 4;
+        grid-column-start: 3;
         grid-column-end: 12;
         grid-row-start: 12;
         grid-row-end: 12;
         font-weight: 400;
-        width: 60.75vw;
-        margin-left: 4.53vw;
+        width: 75vw;
+        /* margin-left: 4.53vw; */
     }
     
     #floating-text2>p {
@@ -121,7 +130,7 @@ html {
         grid-row-start: 16;
         grid-row-end: 16;
     
-        width: 68.20vw;
+        width: 75.20vw;
         font-weight: 400;
     }
     
@@ -154,6 +163,16 @@ html {
         padding: 0.52vw;
         margin-bottom: 1.04vw;
     }
+
+    .grid {
+        margin-left: 10vw;
+        min-height: 392vw;
+        min-width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(12, 6.66vw);
+        grid-template-rows: repeat(32, 1fr);
+    }
+
     .balloon>p {
         font-weight: 400;
         max-width: 18.02vw;
@@ -287,14 +306,7 @@ button {
     
 }
 
-.grid {
-    margin-left: 10vw;
-    min-height: 392vw;
-    min-width: 80vw;
-    display: grid;
-    grid-template-columns: repeat(12, 6.66vw);
-    grid-template-rows: repeat(32, 1fr);
-}
+
 
 @keyframes float {
     0% {
@@ -499,6 +511,7 @@ align-items: center;*/
 
 #botaotrilhas {
     /* margin-left: 3vw; */
+    z-index: 990;
     width: 11.98vw;
     height: 11.98vw;
     background-color: transparent;
@@ -515,14 +528,16 @@ align-items: center;*/
     margin-top: -16.9vw;
     width: 11.98vw;
     height: 11.98vw;
-    background-image: url("../images/home/owl_frames/coruja1.png");
+    /* background-image: url("../images/home/owl_frames/coruja1.png"); */
     background-size: contain;
+    transition: opacity 0.5s;
+
     background-repeat: no-repeat;
     background-position: center;
     /* opacity: 1; */
     /* transition: width 0.3s, height 0.3s, margin-top 0.3s, margin-left 0.3s; */
 
-    &:hover {
+    /* &:hover {
         
         animation-name: coruja;
         animation-duration: 0.3s;
@@ -531,7 +546,20 @@ align-items: center;*/
         animation-fill-mode: forwards;
         
 
-    }
+    } */
+}
+
+.frame{
+    position: absolute;
+    margin-left: -6vw;
+    margin-top: -6vw;
+    width: 11.98vw;
+    height: 11.98vw;
+    opacity: 0;
+}
+
+.frame.visible {
+    opacity: 1;
 }
 
 .owl_text {
