@@ -363,21 +363,64 @@ button {
 }
 
 @keyframes coruja {
-    0% {
-        opacity: 1;
+    
+    12.5% {
+        background-image: url("../images/home/owl_frames/coruja1.png");
     }
 
-    50% {
-        background-image: url('../images/owl_half.png');
+    25%{
+        background-image: url("../images/home/owl_frames/coruja2.png");
+    }
+
+    37.5%{
+        background-image: url("../images/home/owl_frames/coruja3.png");
+    }
+
+    50%{
+        background-image: url("../images/home/owl_frames/coruja4.png");
+    }
+
+    62.5%{
+        background-image: url("../images/home/owl_frames/coruja5.png");
     }
 
     75% {
-        opacity: 1;
+        background-image: url("../images/home/owl_frames/coruja6.png");
+    }
+
+    87.5%{
+        background-image: url("../images/home/owl_frames/coruja7.png");
     }
 
     100% {
-        background-image: url('../images/owl_hover.png');
-        opacity: 1;
+        background-image: url("../images/home/owl_frames/coruja8.png");
+    }
+}
+
+@keyframes cachorro{
+    15%{
+        background-image: url("../images/home/dog_frames/cachorro2.png");
+    }
+
+    30%{
+        background-image: url("../images/home/dog_frames/cachorro3.png");
+    }
+
+    45%{
+        background-image: url("../images/home/dog_frames/cachorro4.png");
+    }
+
+    60%{
+        background-image: url("../images/home/dog_frames/cachorro5.png");
+    }
+
+    75%{
+        background-image: url("../images/home/dog_frames/cachorro6.png");
+    }
+
+
+    100%{
+        background-image: url("../images/home/dog_frames/cachorro6.png");
     }
 }
 
@@ -455,43 +498,44 @@ align-items: center;*/
 
 
 #botaotrilhas {
-    width: 5.16vw;
-    height: 6.82vw;
+    /* margin-left: 3vw; */
+    width: 11.98vw;
+    height: 11.98vw;
     background-color: transparent;
-    background-image: url("../images/owl_trails.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-    transition: width 0.3s, height 0.3s, margin-top 0.3s, margin-left 0.3s;
-
-    &:hover {
-        width: 9.53vw;
-        height: 8.82vw;
-        margin-top: -1.08vw;
-        margin-left: -2.2vw;
-        background-image: url('../images/owl_hover.png');
-        opacity: 1;
-        animation-name: coruja;
-        animation-duration: 0.3s;
-        animation-timing-function: ease;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
+    
 
 }
 
 
 #corujacol4row29 {
+    z-index: 8;
     grid-column-start: 7;
     grid-row-start: 31;
-    margin-left: -7.2vw;
-    margin-top: -13.9vw;
-    width: 9.53vw;
-    height: 15.72vw;
+    margin-left: -10.8vw;
+    margin-top: -16.9vw;
+    width: 11.98vw;
+    height: 11.98vw;
+    background-image: url("../images/home/owl_frames/coruja1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* opacity: 1; */
+    /* transition: width 0.3s, height 0.3s, margin-top 0.3s, margin-left 0.3s; */
+
+    &:hover {
+        
+        animation-name: coruja;
+        animation-duration: 0.3s;
+        
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        
+
+    }
 }
 
 .owl_text {
+    z-index: 7;
     grid-column-start: 7;
     grid-row-start: 30;
     margin-left: -2.6vw;
@@ -499,6 +543,7 @@ align-items: center;*/
 }
 
 .dog_text {
+    z-index: 7;
     grid-column-start: 5;
     grid-row-start: 32;
     margin-left: 4vw;
@@ -593,29 +638,34 @@ align-items: center;*/
 #cachorrocol8row33 {
     grid-column-start: 5;
     grid-row-start: 32;
-    margin-top: 1vw;
-    margin-left: .3vw;
-    width: 5.61vw;
-    height: 7.66vw;
-}
-
-#botaoprojetos {
-    width: 4.58vw;
-    height: 9.69vw;
+    margin-top: .4vw;
+    margin-left: -2.7vw;
+    width: 10.52vw;
+    height: 10.52vw;
     background-color: transparent;
-    background-image: url("../images/dog_projects.png");
+    background-image: url("../images/home/dog_frames/cachorro1.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     transition: background-image 0.3s ease;
+
+    &:hover{
+        animation-name: cachorro;
+        animation-duration: 0.4s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 }
 
-#botaoprojetos img {
-    width: 5.61vw;
-    height: 11.86vw;
-
-    transition: opacity 0.3s ease;
+#botaoprojetos {
+    z-index: 8;
+    width: 10.52vw;
+    height: 10.52vw;
+    background-color: transparent;
 }
+
+
 
 #sapocol10row31 {
     grid-column-start: 11;

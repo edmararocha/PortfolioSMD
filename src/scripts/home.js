@@ -21,31 +21,6 @@ frog.addEventListener('mouseout', function() {
 
 });}
 
-const dog = document.querySelector('#botaoprojetos')
-const dog_text = document.querySelector('.projects')
-const cachorroLevantando = new Image();
-const textoCachorroHover = new Image();
-const textoCachorro = './src/images/text-projects.png'
-const cachorroNormal = './src/images/dog_projects.png'
-
-cachorroLevantando.src = './src/images/dog_hover.png'
-textoCachorroHover.src = './src/images/text-projects-hover.png'
-cachorroLevantando.onload = function(){
-dog.addEventListener('mouseover', function() {
-  this.style.backgroundImage = `url(${cachorroLevantando.src})`;
-  // dog_text.style.backgroundImage = `url(${textoCachorroHover.src})`;
-  this.style.width = "4.95vw";
-  this.style.height = "9.69vw";
-  
-});
-/*        width: 5.83vw;
-    height: 12.08vw;* */
-dog.addEventListener('mouseout', function() {
-  this.style.backgroundImage = `url(${cachorroNormal})`;
-  // dog_text.style.backgroundImage = `url(${textoCachorro.src})`;
-  this.style.marginLeft = "vw"
-
-});}
 
 // const owl = document.querySelector('#botaotrilhas')
 // const corujaLevantando = new Image();
