@@ -12,10 +12,9 @@ function mudartrilha(trilha){
     }
 
     if(ntrilha==1){
-      corujadastrilhas.style.width="29.9vw";
-      corujadastrilhas.setAttribute("src","../source/coruja design.png");
-      corujadastrilhas.style.marginTop="2.5vw";
-      corujadastrilhas.style.marginLeft="0.5vw";
+      
+      corujadastrilhas.setAttribute("src","../images/trails/coruja_design.png");
+      
       h1dastrilhas.innerText="DESIGN DIGITAL INTERATIVO";
       h1dastrilhas.style.fontSize="2.88vw";
       h1dastrilhas.style.textAlign="left";
@@ -26,10 +25,9 @@ function mudartrilha(trilha){
     }
 
     if(ntrilha==2){
-      corujadastrilhas.style.width="20vw";
-      corujadastrilhas.setAttribute("src","../source/coruja audiovisual.png");
-      corujadastrilhas.style.marginTop="4vw";
-      corujadastrilhas.style.marginLeft="1.5vw";
+      // corujadastrilhas.style.width="20vw";
+      corujadastrilhas.setAttribute("src","../images/trails/coruja_audio.png");
+      
       h1dastrilhas.innerText="ANIMAÇÃO E AUDIOVISUAL";
       h1dastrilhas.style.fontSize="2.88vw";
       h1dastrilhas.style.textAlign="left";
@@ -41,20 +39,14 @@ function mudartrilha(trilha){
     }
 
     if(ntrilha==3){
-      corujadastrilhas.style.width="21.15vw";
-      corujadastrilhas.setAttribute("src","../source/corujaprog.png");
-      corujadastrilhas.style.marginTop="3vw";
-      corujadastrilhas.style.marginLeft="0.5vw";
+      corujadastrilhas.setAttribute("src","../images/trails/coruja_sistemas.png");
       h1dastrilhas.innerText="SISTEMAS MULTIMÍDIA";
       frasebalaotrilhas.innerText="Essa trilha engloba conhecimentos teóricos e práticos do design e do desenvolvimento de tecnologias digitais interativas adquiridos ao longo do curso de forma a estimular a visão crítica do aluno. Além disso, abrange questões de experiência do usuário e interatividade no design digital! Além disso, abrange questões de experiência do usuário e interatividade no design digital!"
       selectedimg.setAttribute("src","../source/selectedsistemas.png");
     }
 
     if(ntrilha==4){
-      corujadastrilhas.style.width="28.23vw";
-      corujadastrilhas.setAttribute("src","../source/coruja jogos.png");
-      corujadastrilhas.style.marginTop="-3.8vw";
-      corujadastrilhas.style.marginLeft="-7vw"
+      corujadastrilhas.setAttribute("src","../images/trails/coruja_jogos.png");
       h1dastrilhas.innerText="JOGOS DIGITAIS";
       frasebalaotrilhas.innerText="A trilha de jogos digitais visa promover o desenvolvimento de jogos e aplicações interativas contemplando noções de/referenciando computação, arte e cultura a partir dos aspectos teóricos e práticos explorados em seus componentes curriculares. ";
       selectedimg.setAttribute("src","../source/selectedjogos.png");

@@ -4,6 +4,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;  
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 /*1920px = 98vw
 SEMPRE USAR VW, usando calc de regra de 3*/
@@ -17,15 +18,15 @@ SEMPRE USAR VW, usando calc de regra de 3*/
     grid-template-rows:repeat(5, 1fr);
 }
 #corujatrilhas{
-    grid-column-start: 8;
-    grid-column-end: 10;
+    grid-column-start: 7;
+    grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 4;
-    margin-top: 11vw;
-    margin-left: 1.17vw; 
+    margin-top: 1.6vw;
+    margin-left: -3.2vw; 
 }
 #corujatrilhas > img{
-    width: 20.52vw;
+    width: 46.61vw;
     margin-top:4vw;
     margin-left:0.5vw;
 }
