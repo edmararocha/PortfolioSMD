@@ -54,12 +54,12 @@ main {
         justify-content: space-between;
         position: fixed;
         z-index: 999;
-        padding-top: 1vw;
-        padding-bottom: 1vw;
+        padding-top: .5vw;
+        padding-bottom: .5vw;
     }
 
     .logo-content {
-        width: 6vw;
+        width: 90px;
         margin-left: 10vw;
     }
 
