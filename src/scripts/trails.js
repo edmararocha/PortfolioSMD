@@ -46,7 +46,7 @@ function mudartrilha(trilha){
       corujadastrilhas.style.marginTop="3vw";
       corujadastrilhas.style.marginLeft="0.5vw";
       h1dastrilhas.innerText="SISTEMAS MULTIMÍDIA";
-      frasebalaotrilhas.innerText="A trilha de sistemas multimídia aborda as áreas mais voltadas para a programação e banco de dados"
+      frasebalaotrilhas.innerText="Essa trilha engloba conhecimentos teóricos e práticos do design e do desenvolvimento de tecnologias digitais interativas adquiridos ao longo do curso de forma a estimular a visão crítica do aluno. Além disso, abrange questões de experiência do usuário e interatividade no design digital! Além disso, abrange questões de experiência do usuário e interatividade no design digital!"
       selectedimg.setAttribute("src","../source/selectedsistemas.png");
     }
 
