@@ -87,6 +87,14 @@ h1 {
         align-content: space-around;
     }
 
+    #name{
+        padding-top: 4vw;
+    }
+
+    #img-graduate{
+        margin-top: 4vw;
+    }
+
     .location-content {
         cursor: pointer;
         width: 2vw;
