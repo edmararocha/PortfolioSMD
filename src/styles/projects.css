@@ -5,7 +5,7 @@
 } */
 
 body {
-    background-image: url(../images/projects_bg.png);
+    
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -27,6 +27,10 @@ h1 {
 }
 
 @media (min-width: 600px) {
+
+    body{
+        background-image: url(../images/projects_bg.png);
+    }
     #character-content {
         margin-left: 50.43vw;
         display: flex;
@@ -165,6 +169,10 @@ h1 {
 @media (max-width: 599px) {
     * {
         font-size: large;
+    }
+
+    body{
+        background-image: url(../images/projects_bg_mobile.png);
     }
 
     main {
