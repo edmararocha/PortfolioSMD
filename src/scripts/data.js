@@ -63,7 +63,7 @@ const projects = [
         id: 5,
         categoryId: [0],
         name: "Brincadeiras da minha infância",
-        description: "O curta é um lapso de memória de coisas que me lembram minha infância, quase como se fosse um sonho de como era um dia da minha vida ná época que era criança.",
+        description: "O curta é um lapso de memória de coisas que me lembram minha infância, quase como se fosse um sonho de como era um dia da minha vida na época que era criança.",
         descriptionCard: "O curta é um lapso de memória de coisas que me lembram minha infância.",
         imgUrl: "../images/projects/5.jpg",
         demoUrl: "https://www.youtube.com/embed/ozvc2_In9Uk",
