@@ -118,6 +118,7 @@ h1 {
     }
 
     .card-project {
+        cursor: pointer;
         width: 18.75vw;
         background-color: white;
         border-radius: 1.25vw;
