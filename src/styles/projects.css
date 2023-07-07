@@ -4,11 +4,7 @@
     min-height: 100vh;
 } */
 
-body {
-    
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
+
 
 /* p {
     color: black;
@@ -30,6 +26,7 @@ h1 {
 
     body{
         background-image: url(../images/projects_bg.png);
+        background-repeat: repeat-y;
     }
     #character-content {
         margin-left: 50.43vw;
@@ -41,7 +38,7 @@ h1 {
         width: 15.2vw;
         height: 10vw;
         background-color: #F2F2F2;
-        border-radius: 0.52vw;
+        border-radius: 1.52vw;
         padding: 0.52vw;
         margin-bottom: 1.04vw;
     }
@@ -173,6 +170,7 @@ h1 {
 
     body{
         background-image: url(../images/projects_bg_mobile.png);
+        background-repeat: repeat-y;
     }
 
     main {
@@ -195,7 +193,7 @@ h1 {
         width: 46vw;
         height: 18vw;
         background-color: #F2F2F2;
-        border-radius: 0.52vw;
+        border-radius: 2.52vw;
         padding: 3vw;
         /* margin-bottom: 1.04vw; */
     }
