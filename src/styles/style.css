@@ -46,7 +46,7 @@ main {
         top: 0;
         background-color: rgba(32, 32, 32, 0.3);
         background-blend-mode: multiply;
-        width: 100%;
+        width: 100vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
