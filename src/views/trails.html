@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../styles/trails.css">
   <link rel="stylesheet" href="../styles/style.css">
   <script src="../scripts/script.js" defer></script>
+  <script src="../scripts/trails.js" defer></script>
 </head>
 
 <body>
@@ -46,30 +47,62 @@
       </div>
     </nav>
   </header>
-  <div class="gridtrilhas">
-    <div id="corujatrilhas">
-      <img src="../images/trails/coruja.png" id="corujadastrilhas" alt="">
-    </div>
-    <div id="balaotrilhas">
-      <h1 id="h1dastrilhas">TRILHAS?!</h1>
-      <p id="frasebalaotrilhas">Calma! Eu posso te contar um pouco mais sobre elas, mas antes me ajude a escolher sobre
-        qual falar primeiro...
-      </p>
-    </div>
-      <nav class="localnav-trilhas">
-        <ul id="selecttrilhas" class="localnav-trilhas">
-          <li><a onclick="mudartrilha(1)"><img src="../source/trilhadesign.png" id="imgdesign" alt=""></a></li>
-          <li><a onclick="mudartrilha(2)"><img src="../source/trilhaaudiovisual.png" id="imgaudiovisual" alt=""></a></li>
-          <li><a onclick="mudartrilha(3)"><img src="../source/trilhasistemas.png" id="imgsistemas" alt=""></a></li>
-          <li><a onclick="mudartrilha(4)"><img src="../source/trilhajogos.png" id="imgjogos" alt=""></a></li>
-        </ul>
-      </nav>
-      <div id="trilhaisselected">
-        <img src="" alt="trilha" id="selectedimg">
+  <main>
+    <div class="content">
+      <div class="ballon-content">
+        <div class="menu">
+          <ul id="selecttrilhas" class="menu-trails">
+            <li><a onclick="changeTrail(0)">
+                <div class="menu-item" style="background-color: #F48050;">
+                  <div class="img-content">
+                    <img src="../images/trails/0.png" alt="ícone da trilha de audiovisual">
+                  </div>
+                  <p>AUDIOVISUAL</p>
+                </div>
+              </a></li>
+            <li><a onclick="changeTrail(1)">
+                <div class="menu-item" style="background-color: #D1302D;">
+                  <div class="img-content">
+                    <img src="../images/trails/1.png" alt="ícone da trilha de design">
+                  </div>
+                  <p>DESIGN</p>
+                </div>
+              </a></li>
+            <li><a onclick="changeTrail(2)">
+                <div class="menu-item" style="background-color: #5E3892;">
+                  <div class="img-content">
+                    <img src="../images/trails/2.png" alt="ícone da trilha de jogos">
+                  </div>
+                  <p>JOGOS</p>
+                </div>
+              </a></li>
+            <li><a onclick="changeTrail(3)">
+                <div class="menu-item" style="background-color: #1C1759;">
+                  <div class="img-content">
+                    <img src="../images/trails/3.png" alt="ícone da trilha de sistemas">
+                  </div>
+                  <p>SISTEMAS</p>
+                </div>
+              </a></li>
+          </ul>
+          <div id="selected"></div>
+        </div>
+        <div class="text-content">
+          <h1 id="title">TRILHAS?!</h1>
+          <div id="trail-description">
+            <div id="original-description">
+              <p>Calma! Eu posso te contar um pouco mais sobre elas, mas antes me ajude a escolher sobre qual falar
+                primeiro...</p>
+              <p><b>Selecione algum dos itens acima.</b></p>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-
-  <script src="../scripts/trails.js"></script>
+      <div class="triangle"></div>
+      <div class="img-owl-content">
+        <img id="owl" src="../images/trails/coruja.png" alt="coruja">
+      </div>
+    </div>
+  </main>
 </body>
-
 </html>

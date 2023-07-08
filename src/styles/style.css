@@ -13,7 +13,8 @@ h5 {
 p,
 a,
 label,
-input {
+input,
+li {
     font-family: 'Fredoka', sans-serif;
     font-weight: 300;
 }
