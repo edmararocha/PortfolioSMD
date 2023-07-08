@@ -84,12 +84,27 @@ window.addEventListener("DOMContentLoaded",()=> {
 });
 
 function voltareScrollar() {
+  animationExecuted = true;
   window.location.href = "index.html";
 }
-function scrollarprabaixo() {
-  animationExecuted = true;
-  scrollTo(0, 6500);
+
+
+var arrow_button1 = document.querySelector('#botaoscrollprabaixo')
+var floating_text1 = document.querySelector('#floating-text1')
+
+arrow_button1.onclick = () => {
+  scrollDiv(floating_text1);
+}
+
+function scrollDiv(div) {
   
+  const offset = 80; // Valor em pixels antes da div
+
+  const topPosition = div.offsetTop - offset;
+  window.scrollTo({
+    top: topPosition,
+    behavior: 'smooth'
+  });
 }
 
 
