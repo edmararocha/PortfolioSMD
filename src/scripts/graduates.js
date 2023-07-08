@@ -2,6 +2,8 @@ import { graduates } from "./data_graduates.js";
 
 let isDescktop = false;
 
+document.documentElement.clientWidth > 600 ? isDescktop = true : null;
+
 const content = document.getElementsByClassName("map-content");
 
 function templateGraduateLocation(item) {
