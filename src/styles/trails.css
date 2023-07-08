@@ -14,7 +14,7 @@ body {
 
 .ballon-content {
     width: 38vw;
-    height:fit-content;
+    height: fit-content;
     background-color: white;
     border-radius: 1vw;
     text-align: left;
@@ -26,7 +26,7 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
 .menu-item {
@@ -74,13 +74,51 @@ img {
     border-left: 2.0vw solid #FFFFFF;
 }
 
+h1 {
+    margin: 0;
+}
+
 .text-content {
-    padding: 4vw;
+    padding-top: 3vw;
+    padding-left: 4vw;
+    padding-right: 2vw;
+    padding-bottom: 3vw;
+}
+
+#trail-description {
+    margin-top: 0.5vw;
+    min-height: 20vw;
+    max-height: 20vw;
+    overflow: auto;
+}
+
+#trail-description::-webkit-scrollbar {
+    width: 8px;
+    /* largura da barra de rolagem */
+}
+
+#trail-description::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+    /* cor de fundo da pista */
+}
+
+#trail-description::-webkit-scrollbar-thumb {
+    background: #441B4B;
+    border-radius: 8px;
+    /* cor do botão de rolagem */
+}
+
+#trail-description::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 8px;
+    /* cor do botão de rolagem quando hover */
 }
 
 .text-content p {
     margin-top: 2vw;
     font-size: larger;
+    padding-right: 2vw;
 }
 
 .img-owl-content {

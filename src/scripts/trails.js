@@ -46,6 +46,8 @@ function templateD() {
   selected.style.backgroundColor = "#D1302D";
   owl.src = "../images/trails/coruja_design.png";
 
+  trailDescription.style.overflow = "auto";
+  
   description.textContent = "Essa trilha engloba conhecimentos teóricos e práticos do design e do desenvolvimento de tecnologias digitais interativas adquiridos ao longo do curso de forma a estimular a visão crítica do aluno. Além disso, abrange questões de experiência do usuário e interatividade no design digital!";
 
   trailDescription.appendChild(description);
