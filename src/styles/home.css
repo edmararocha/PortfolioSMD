@@ -522,10 +522,10 @@ align-items: center;*/
 
 #corujacol4row29 {
     z-index: 8;
-    grid-column-start: 7;
-    grid-row-start: 31;
-    margin-left: -10.8vw;
-    margin-top: -16.9vw;
+    grid-column-start: 5;
+    grid-row-start: 30;
+    margin-left: .8vw;
+    margin-top: -2.4vw;
     width: 11.98vw;
     height: 11.98vw;
     /* background-image: url("../images/home/owl_frames/coruja1.png"); */
@@ -568,22 +568,23 @@ align-items: center;*/
     z-index: 7;
     grid-column-start: 7;
     grid-row-start: 30;
-    margin-left: -2.6vw;
-    margin-top: -5vw;
+    margin-left: -4.6vw;
+    margin-top: -4.5vw;
 }
 
 .dog_text {
     z-index: 7;
-    grid-column-start: 5;
+    grid-column-start: 4;
     grid-row-start: 32;
-    margin-left: 4vw;
-    margin-top: -2vw;
+    margin-left: 2vw;
+    margin-top: -4vw;
 }
 
 .frog_text {
-    grid-column-start: 11;
+    grid-column-start: 8;
     grid-row-start: 32;
-    margin-top: -3vw;
+    margin-top: -6vw;
+    margin-left: 2vw;
 }
 
 .ellipsis-text {
@@ -709,10 +710,10 @@ align-items: center;*/
 }
 
 #cachorrocol8row33 {
-    grid-column-start: 5;
+    grid-column-start: 4;
     grid-row-start: 32;
-    margin-top: .4vw;
-    margin-left: -2.7vw;
+    margin-top: -1vw;
+    margin-left: -5vw;
     width: 10.52vw;
     height: 10.52vw;
     background-color: transparent;
@@ -754,10 +755,10 @@ align-items: center;*/
 
 
 #sapocol10row31 {
-    grid-column-start: 11;
+    grid-column-start: 8;
     grid-row-start: 32;
-    margin-left: -4vw;
-    margin-top: -.5vw;
+    margin-left: -2.2vw;
+    margin-top: -3vw;
     width: 6.28vw;
     height: 10.67vw;
 }
