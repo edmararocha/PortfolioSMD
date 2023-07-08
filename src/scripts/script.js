@@ -1,7 +1,7 @@
 
 
 var path = window.location.pathname;
-var menuItems = document.getElementsByClassName("global-menu-item");
+var menuItems = document.querySelectorAll(".global-menu-item");
 
 for (var i = 0; i < menuItems.length; i++) {
   var menuItem = menuItems[i];
