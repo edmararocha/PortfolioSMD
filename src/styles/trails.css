@@ -1,254 +1,256 @@
-body {
-    background-color: var(--lightgrey);
-    background-image: url(../source/bcktrilhas.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-y: hidden;
-    overflow-x: hidden;
+@media (min-width: 600px) {
+    body {
+        background-color: var(--lightgrey);
+        background-image: url(../source/bcktrilhas.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .content {
+        margin-top: 8vw;
+        display: flex;
+    }
+
+    .ballon-content {
+        width: 38vw;
+        height: fit-content;
+        background-color: white;
+        border-radius: 1vw;
+        text-align: left;
+    }
+
+    .menu-trails {
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-item {
+        width: 5.5vw;
+        height: 4vw;
+        margin-top: -1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: brown;
+        padding: 1vw 2vw 0.5vw 2vw;
+        border-radius: 1.2vw 1.2vw 0 0;
+    }
+
+    .img-content {
+        max-height: 50%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-item p {
+        margin-top: 0.5vw;
+        color: white;
+        font-family: Fredoka;
+        font-weight: bold;
+        font-size: smaller;
+    }
+
+    #selected {
+        width: 100%;
+        height: 2vw;
+    }
+
+    .triangle {
+        /* margin-left: 38vw; */
+        margin-top: 16vw;
+        width: 0;
+        height: 0;
+        border-top: 1.04vw solid transparent;
+        border-bottom: 1.04vw solid transparent;
+        border-left: 2.0vw solid #FFFFFF;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .text-content {
+        padding-top: 3vw;
+        padding-left: 4vw;
+        padding-right: 2vw;
+        padding-bottom: 3vw;
+    }
+
+    #trail-description {
+        margin-top: 0.5vw;
+        min-height: 20vw;
+        max-height: 20vw;
+        overflow: auto;
+    }
+
+    #trail-description::-webkit-scrollbar {
+        width: 8px;
+        /* largura da barra de rolagem */
+    }
+
+    #trail-description::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 8px;
+        /* cor de fundo da pista */
+    }
+
+    #trail-description::-webkit-scrollbar-thumb {
+        background: #441B4B;
+        border-radius: 8px;
+        /* cor do botão de rolagem */
+    }
+
+    #trail-description::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        border-radius: 8px;
+        /* cor do botão de rolagem quando hover */
+    }
+
+    .text-content p {
+        margin-top: 2vw;
+        font-size: larger;
+        padding-right: 2vw;
+    }
+
+    .img-owl-content {
+        margin-top: 2vw;
+        margin-left: 2vw;
+        height: 85vh;
+    }
 }
 
-.content {
-    margin-top: 8vw;
-    display: flex;
+@media (max-width: 599px) {
+    body {
+        background-color: var(--lightgrey);
+        background-image: url(../source/bcktrilhas.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    .content {
+        margin: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ballon-content {
+        background-color: white;
+        border-radius: 1vw;
+        text-align: left;
+    }
+
+    .menu-trails {
+        padding: 0;
+        width: 100vw;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-item {
+        margin-top: -2vw;
+        width: 16vw;
+        height: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4.5vw 0 4.5vw;
+        border-radius: 2.5vw 2.5vw 0 0;
+    }
+
+
+    .img-owl-content {
+        margin-top: 10vw;
+        margin-left: 48vw;
+        height: 20vh;
+        width: 45vw;
+    }
+
+    .img-content {
+        max-height: 40%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-item p {
+        margin-top: 2vw;
+        color: white;
+        font-family: Fredoka;
+        font-size: small;
+    }
+
+    #selected {
+        margin-top: -1vw;
+        width: 100%;
+        height: 6vw;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .text-content {
+        padding-top: 8vw;
+        padding-left: 8vw;
+        padding-right: 4vw;
+        padding-bottom: 3vw;
+    }
+
+    #trail-description {
+        margin-top: 0.5vw;
+        overflow: auto;
+    }
+
+    #trail-description::-webkit-scrollbar {
+        width: 8px;
+        /* largura da barra de rolagem */
+    }
+
+    #trail-description::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 8px;
+        /* cor de fundo da pista */
+    }
+
+    #trail-description::-webkit-scrollbar-thumb {
+        background: #441B4B;
+        border-radius: 8px;
+        /* cor do botão de rolagem */
+    }
+
+    #trail-description::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        border-radius: 8px;
+        /* cor do botão de rolagem quando hover */
+    }
+
+    .text-content p {
+        margin-top: 2vw;
+        font-size: larger;
+        padding-right: 2vw;
+    }
 }
-
-.ballon-content {
-    width: 38vw;
-    height: fit-content;
-    background-color: white;
-    border-radius: 1vw;
-    text-align: left;
-}
-
-.menu-trails {
-    padding: 0;
-    width: 100%;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-item {
-    width: 5.5vw;
-    height: 4vw;
-    margin-top: -1vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: brown;
-    padding: 1vw 2vw 0.5vw 2vw;
-    border-radius: 1.2vw 1.2vw 0 0;
-}
-
-.img-content {
-    max-height: 50%;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-}
-
-.menu-item p {
-    margin-top: 0.5vw;
-    color: white;
-    font-family: Fredoka;
-    font-weight: bold;
-    font-size: smaller;
-}
-
-#selected {
-    width: 100%;
-    height: 2vw;
-}
-
-.triangle {
-    /* margin-left: 38vw; */
-    margin-top: 16vw;
-    width: 0;
-    height: 0;
-    border-top: 1.04vw solid transparent;
-    border-bottom: 1.04vw solid transparent;
-    border-left: 2.0vw solid #FFFFFF;
-}
-
-h1 {
-    margin: 0;
-}
-
-.text-content {
-    padding-top: 3vw;
-    padding-left: 4vw;
-    padding-right: 2vw;
-    padding-bottom: 3vw;
-}
-
-#trail-description {
-    margin-top: 0.5vw;
-    min-height: 20vw;
-    max-height: 20vw;
-    overflow: auto;
-}
-
-#trail-description::-webkit-scrollbar {
-    width: 8px;
-    /* largura da barra de rolagem */
-}
-
-#trail-description::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 8px;
-    /* cor de fundo da pista */
-}
-
-#trail-description::-webkit-scrollbar-thumb {
-    background: #441B4B;
-    border-radius: 8px;
-    /* cor do botão de rolagem */
-}
-
-#trail-description::-webkit-scrollbar-thumb:hover {
-    background: #555;
-    border-radius: 8px;
-    /* cor do botão de rolagem quando hover */
-}
-
-.text-content p {
-    margin-top: 2vw;
-    font-size: larger;
-    padding-right: 2vw;
-}
-
-.img-owl-content {
-    margin-top: 2vw;
-    margin-left: 2vw;
-    height: 85vh;
-}
-
-
-/*1920px = 98vw
-SEMPRE USAR VW, usando calc de regra de 3*/
-
-/* .gridtrilhas{
-    min-width: 98vw;
-    height: 55.13vw;
-    max-height: 55.13vw;
-    display: grid;
-    grid-template-columns: repeat(12, 8.22vw);
-    grid-template-rows:repeat(5, 1fr);
-}
-#corujatrilhas{
-    grid-column-start: 7;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    margin-top: 1.6vw;
-    margin-left: -3.2vw; 
-}
-#corujatrilhas > img{
-    width: 46.61vw;
-    margin-top:4vw;
-    margin-left:0.5vw;
-}
-#balaotrilhas{
-    font-family: 'Montserrat', sans-serif;
-    background-image: url("../source/balaobranco.png");
-    background-repeat: no-repeat;
-    grid-column-start: 2;
-    grid-column-end: 7;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    margin-left: 3.62vw;
-    margin-top: -9.2vw;
-    margin-bottom: 3vw;
-    width: 38.9vw;
-    overflow-y: scroll;
-    overflow-x: none;
-} */
-
-
-/* width */
-/* ::-webkit-scrollbar {
-    width: 10px;
-  } */
-
-/* Track */
-/* ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
-  } */
-
-/* Handle */
-/* ::-webkit-scrollbar-thumb {
-    background: red; 
-    border-radius: 10px;
-  } */
-
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-    background: rgb(65, 9, 65); 
-  } */
-
-
-/* #balaotrilhas > h1{
-    font-size: 3.88vw;
-    margin-left: 7.86vw;
-    margin-top: 2.4vw;
-    padding-bottom: 3.27vw;
-    font-weight: 600;
-}
-#balaotrilhas > p{
-    font-size: 1.63vw;
-    width: 30.83vw;
-    text-align: left;
-    margin-left: 3.27vw;
-}
-
-#balaotrilhas > #select{
-    margin-left: 5.97vw;
-    margin-top: 2.50vw;
-}
-
-.localnav-trilhas{
-    grid-column-start: 3;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    justify-items: center;
-    justify-content: center;
-    list-style-type: none;
-    margin-top: 4.5vw;
-    margin-left: 3.69vw;
-    width: 9.78vw;
-    height: fit-content;
-}
-#selecttrilhas{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: -6.5vw;
-    
-}
-.localnav-trilhas img{
-    width: 9.7250vw;
-    height: 4.2875vw;
-}
-
-#trilhaisselected{
-    display: none;
-    grid-column-start: 3;
-    grid-column-end: 7;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    margin-left: -4.6vw;
-    margin-top: -9vw;
-    width: 38.68958333333333vw;
-    height: 2.14375vw;
-}
-#selectedimg{
-    width: 38.9vw;
-    height: 2.14375vw;
-} */
