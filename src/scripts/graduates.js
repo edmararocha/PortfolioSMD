@@ -1,6 +1,8 @@
 import { graduates } from "./data_graduates.js";
 
-const content = document.getElementsByClassName("content");
+let isDescktop = false;
+
+const content = document.getElementsByClassName("map-content");
 
 function templateGraduateLocation(item) {
   var graduateDiv = document.createElement('div');
@@ -16,8 +18,13 @@ function templateGraduateLocation(item) {
   nameText.textContent = item['name'];
   graduateImg.src = "../images/location-icon.png";
 
-  graduateDiv.style.left = item['positionInMap'][0];
-  graduateDiv.style.top = item['positionInMap'][1];
+  if (isDescktop) {
+    graduateDiv.style.left = item['positionInMap'][0];
+    graduateDiv.style.top = item['positionInMap'][1];
+  } else {
+    graduateDiv.style.left = item['positionInMap'][2];
+    graduateDiv.style.top = item['positionInMap'][3];
+  }
 
   graduateDiv.appendChild(localContent);
   graduateDiv.appendChild(userLocationText);
