@@ -739,45 +739,49 @@ align-items: center;*/
 
 
 
-#cachorrocol8row33>.ellipsis-text {
-    margin-left: 7.9vw;
-    margin-bottom: 5.7vw;
+.meteors{
+    width: 80vw;
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-row-start: 17;
 }
 
-#sapocol10row31>.ellipsis-text {
-    margin-left: 7.2vw;
-    margin-bottom: 8.3vw;
-}
 
 .meteor_audio{
     width: 13.33vw;
     height: 28.91vw;
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 240vw;
+    /* position: absolute; */
+    /* top: 240vw; */
     background-image: url("../images/home/meteor_frames/audiovisual_apng.png");
 }
 
 .meteor_design{
     width: 13.33vw;
     height: 28.91vw;
+    margin-top: -6.04vw;
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 233.96vw;
-    left: 32.19vw;
+    /* position: absolute; */
+    /* top: 233.96vw; */
+    /* left: 32.19vw; */
     background-image: url("../images/home/meteor_frames/design_apng.png");
 }
 
 .meteor_jogos{
     width: 13.33vw;
     height: 28.91vw;
+    margin-top: -6.04vw;
+
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 233.96vw;
-    left: 54.38vw;
+    /* position: absolute; */
+    /* top: 233.96vw; */
+    /* left: 54.38vw; */
     background-image: url("../images/home/meteor_frames/jogos_apng.png");
 }
 
@@ -786,9 +790,9 @@ align-items: center;*/
     height: 28.91vw;
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 240vw;
-    left: 76.61vw;
+    /* position: absolute; */
+    /* top: 240vw; */
+    /* left: 76.61vw; */
     background-image: url("../images/home/meteor_frames/sistemas_apng.png");
 }
 
