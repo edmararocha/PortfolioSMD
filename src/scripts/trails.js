@@ -29,14 +29,21 @@ function removeAll() {
 
 function templateA() {
   let description = document.createElement("p");
+  let iframe = document.createElement("iframe");
+  let iframeContent = document.createElement("div");
+  iframeContent.id = "iframe-content";
+
   title.textContent = "AUDIOVISUAL";
   title.style.color = "#F48050";
   selected.style.backgroundColor = "#F48050";
   owl.src = "../images/trails/coruja_audio.png";
+  iframe.src = "https://www.youtube.com/embed/MxyE2gjGGrM";
 
-  description.textContent = "Essa trilha busca aplicar nas áreas de produção artística, cultural e multimídia os conhecimentos desenvolvidos durante seu percurso. Fazendo com que as produções dos alunos adotem formas de expressão e ferramentas de linguagens capazes de se difundirem em diversos meios de comunicação!";
+  description.textContent = "A trilha de animação e audiovisual busca aplicar nas áreas de produção artística, cultural e multimídia os conhecimentos desenvolvidos durante suas disciplinas. Fazendo, assim, com que as produções dos alunos adotem formas de expressão e ferramentas de linguagens que sejam capazes de se difundirem em diversos meios de comunicação!";
 
+  iframeContent.appendChild(iframe);
   trailDescription.appendChild(description);
+  trailDescription.appendChild(iframeContent);
 }
 
 function templateD() {
