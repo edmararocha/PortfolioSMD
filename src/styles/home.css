@@ -161,7 +161,7 @@ html {
         margin-top: -6vw;
         width: 20vw;
         height: 20vw;
-        opacity: 0;
+        /* opacity: 0; */
     }
 
     #corujacol4row29 {
@@ -404,9 +404,9 @@ html {
     #corujacol4row29 {
         z-index: 8;
         grid-column-start: 5;
-        grid-row-start: 30;
+        grid-row-start: 31;
         margin-left: .8vw;
-        margin-top: -1.3vw;
+        margin-top: -9.9vw;
         width: 11.98vw;
         height: 11.98vw;
         
@@ -416,7 +416,7 @@ html {
         grid-column-start: 4;
         grid-row-start: 32;
         /* margin-top: vw; */
-        margin-left: -5vw;
+        margin-left: -5.4vw;
         width: 10.52vw;
         height: 10.52vw;
         background-color: transparent;
@@ -458,8 +458,8 @@ html {
     #sapocol10row31 {
         grid-column-start: 8;
         grid-row-start: 32;
-        margin-left: -2.2vw;
-        margin-top: -2vw;
+        margin-left: -3.3vw;
+        margin-top: -1.5vw;
         width: 6.28vw;
         height: 10.67vw;
     }
@@ -700,9 +700,9 @@ align-items: center;*/
 .owl_text {
     z-index: 7;
     grid-column-start: 7;
-    grid-row-start: 30;
+    grid-row-start: 31;
     margin-left: -4.6vw;
-    margin-top: -4.5vw;
+    margin-top: -12.5vw;
 }
 
 .dog_text {
