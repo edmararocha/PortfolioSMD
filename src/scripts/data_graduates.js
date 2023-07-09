@@ -37,7 +37,7 @@ const graduates = [
     },
     {
         id: 3,
-        name: "Pedro Ítalo da Costa Pinto",
+        name: "Pedro Ítalo",
         imgUrl: "../images/graduates/3.jpg",
         location: "Lisboa, Portugal",
         positionInMap: ['35vw', '13vw','87vw', '15vh'],

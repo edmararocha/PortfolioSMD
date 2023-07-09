@@ -254,6 +254,22 @@ h1 {
         padding-top: 1.2vw;
     }
 
+    .name-contact {
+        display: flex;
+        align-items: center;
+    }
+
+    .img-contact-content {
+        padding-left: 0.5vw;
+        margin-top: -0.5vw;
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .img-contact-content img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media (max-width: 599px) {
@@ -503,5 +519,23 @@ h1 {
     #content-3 {
         padding-top: 2vw;
         padding-bottom: 2vw;
+    }
+
+    .name-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-contact-content {
+        padding-left: 2vw;
+        margin-top: -2.5vw;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .img-contact-content img {
+        width: 100%;
+        height: 100%;
     }
 }

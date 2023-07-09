@@ -18,13 +18,13 @@ function validateFields() {
     var message = document.getElementById('message');
     var feedbackElement = document.getElementById('feedback');
 
-    if (name.value === "" && email.value === "" && message.value === "") {
+    if (name.value != "" && email.value != "" && message.value != "") {
+        feedbackElement.style.display = "none";
+        return true;
+    } else {
         feedbackElement.textContent = 'Por favor, preencha todos os campos!';
         feedbackElement.style.display = "flex";
         return false;
-    } else {
-        feedbackElement.style.display = "none";
-        return true;
     }
 }
 

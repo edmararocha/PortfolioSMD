@@ -52,6 +52,7 @@ function getDataGraduate(id) {
     document.getElementById("graduate-location").textContent = graduate['location'];
     document.getElementById("name-card").textContent = graduate['name'];
     document.getElementById("graduate-year").textContent = graduate['graduateYear'];
+    document.getElementById("acess").href = graduate['contact'];
     document.getElementById("job").textContent = graduate['job'];
     document.getElementById("bio").textContent = graduate['bio'];
     document.getElementById("aboutSMD").textContent = graduate['aboutSMD'];

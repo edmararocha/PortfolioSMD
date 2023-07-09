@@ -55,7 +55,7 @@ function templateD() {
 
   trailDescription.style.overflow = "auto";
   
-  description.textContent = "Essa trilha engloba conhecimentos teóricos e práticos do design e do desenvolvimento de tecnologias digitais interativas adquiridos ao longo do curso de forma a estimular a visão crítica do aluno. Além disso, abrange questões de experiência do usuário e interatividade no design digital!";
+  description.textContent = "A trilha de design digital engloba conhecimentos teóricos e práticos do Design e do desenvolvimento de tecnologias digitais interativas adquiridos ao longo do curso de forma a estimular a visão crítica do aluno. Além disso, abrange questões de experiência do usuário e interatividade no design digital!";
 
   trailDescription.appendChild(description);
 }
@@ -79,7 +79,7 @@ function templateS() {
   selected.style.backgroundColor = "#1C1759";
   owl.src = "../images/trails/coruja_sistemas.png";
 
-  description.textContent = "Essa trilha tem como objetivo tornar os alunos capazes de analisar, projetar, implementar, testar, implantar, avaliar e manter sistemas computacionais! Com esses conhecimentos, é possível  representar sistemas de forma múltipla, como por meio de imagens, vídeos e sons.";
+  description.textContent = "Essa trilha tem como objetivo tornar os alunos capazes de analisar, projetar, implementar, testar, implantar, avaliar e manter sistemas computacionais! Com esses conhecimentos, é possível representar sistemas de forma múltipla, como por meio de imagens, vídeos e sons.";
 
   trailDescription.appendChild(description);
 }
