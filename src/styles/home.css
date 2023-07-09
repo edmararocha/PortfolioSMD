@@ -161,7 +161,7 @@ html {
         margin-top: -6vw;
         width: 20vw;
         height: 20vw;
-        /* opacity: 0; */
+        opacity: 0;
     }
 
     #corujacol4row29 {
@@ -439,20 +439,17 @@ html {
     }
 
     #botaoegressos {
-        width: 3.98vw;
-        height: 5.72vw;
+        width: 9.32vw;
+        height: 14.32vw;
         background-color: transparent;
-    }
-
-    #botaoegressos {
-        width: 5.83vw;
-        height: 12.08vw;
-        background-image: url("../images/frog_graduates.png");
+        margin-left: -2vw;
+        /* background-image: url("../images/frog_graduates.png"); */
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         transition: background-image 0.25s ease;
     }
+
     
 
     #sapocol10row31 {
@@ -460,8 +457,17 @@ html {
         grid-row-start: 32;
         margin-left: -3.3vw;
         margin-top: -1.5vw;
-        width: 6.28vw;
-        height: 10.67vw;
+        width: 14.32vw;
+        height: 14.32vw;
+    }
+
+    .frame-sapo{
+        position: absolute;
+        margin-left: -7.1vw;
+        margin-top: -8.4vw;
+        width: 14.32vw;
+        height: 14.32vw;
+        opacity: 0;
     }
 
 }
@@ -848,7 +854,9 @@ align-items: center;*/
     opacity: 1;
 }
 
-
+.frame-sapo.visible{
+    opacity: 1;
+}
 
 
 
@@ -875,3 +883,6 @@ align-items: center;*/
     }
 
 
+    #botaoegressos{
+        z-index: 990;
+    }

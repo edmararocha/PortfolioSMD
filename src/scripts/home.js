@@ -1,25 +1,5 @@
 
-const frog = document.querySelector('#botaoegressos')
-const sapoLevantando = new Image();
 
-const sapoNormal = './src/images/frog_graduates.png'
-
-sapoLevantando.src = './src/images/frog_hover.png'
-sapoLevantando.onload = function(){
-frog.addEventListener('mouseover', function() {
-  this.style.backgroundImage = `url(${sapoLevantando.src})`;
-  this.style.width = "6.77vw";
-  this.style.height = "12.08vw";
-  this.style.marginLeft = "-0.47vw"
-});
-/*        width: 5.83vw;
-    height: 12.08vw;* */
-frog.addEventListener('mouseout', function() {
-  this.style.backgroundImage = `url(${sapoNormal})`;
-
-  this.style.marginLeft = "vw"
-
-});}
 
 
 
