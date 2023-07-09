@@ -66,3 +66,38 @@ elementoCachorro.addEventListener('mouseout', () => {
     quadroAtual = 0;
     exibirQuadro(quadroAtual);
 });
+
+let sapoElement = document.querySelector('#botaoegressos')
+let frame_sapos = document.querySelectorAll('.frame-sapo')
+let frogDuration = 300; // Duração total da animação em milissegundos
+let picDuration = frogDuration / frame_sapos.length;
+let frameAtual = 0;
+let sapoTimeout;
+
+function showFrog(frogIndex) {
+    frame_sapos.forEach((frog, indexFrog) => {
+        frog.classList.toggle('visible', indexFrog === frogIndex);
+    });
+}
+
+function playFrog() {
+    showFrog(frameAtual);
+    frameAtual++;
+    if (frameAtual < frames.length) {
+        sapoTimeout = setTimeout(playFrog, frameDuration);
+    }
+}
+
+showFrog(frameAtual);
+
+sapoElement.addEventListener('mouseover', () => {
+    frameAtual = 0;
+    clearTimeout(sapoTimeout);
+    playFrog();
+});
+
+sapoElement.addEventListener('mouseout', () => {
+    clearTimeout(sapoTimeout);
+    frameAtual = 0;
+    showFrog(frameAtual);
+});
