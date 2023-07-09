@@ -1,7 +1,6 @@
 let trailDescription = document.getElementById("trail-description");
 let title = document.getElementById("title");
 let selected = document.getElementById("selected");
-let owl = document.getElementById("owl");
 
 function changeTrail(trail) {
   removeAll();
@@ -36,7 +35,7 @@ function templateA() {
   title.textContent = "AUDIOVISUAL";
   title.style.color = "#F48050";
   selected.style.backgroundColor = "#F48050";
-  owl.src = "../images/trails/coruja_audio.png";
+  document.querySelector("body").style.backgroundImage = `url("../images/trails/bg-1.png")`;
   iframe.src = "https://www.youtube.com/embed/MxyE2gjGGrM";
 
   description.textContent = "A trilha de animação e audiovisual busca aplicar nas áreas de produção artística, cultural e multimídia os conhecimentos desenvolvidos durante suas disciplinas. Fazendo, assim, com que as produções dos alunos adotem formas de expressão e ferramentas de linguagens que sejam capazes de se difundirem em diversos meios de comunicação!";
@@ -51,7 +50,7 @@ function templateD() {
   title.textContent = "DESIGN";
   title.style.color = "#D1302D";
   selected.style.backgroundColor = "#D1302D";
-  owl.src = "../images/trails/coruja_design.png";
+  document.querySelector("body").style.backgroundImage = `url("../images/trails/bg-2.png")`;
 
   trailDescription.style.overflow = "auto";
   
@@ -65,7 +64,7 @@ function templateJ() {
   title.textContent = "JOGOS DIGITAIS";
   title.style.color = "#5E3892";
   selected.style.backgroundColor = "#5E3892";
-  owl.src = "../images/trails/coruja_jogos.png";
+  document.querySelector("body").style.backgroundImage = `url("../images/trails/bg-3.png")`;
 
   description.textContent = "A trilha de jogos digitais visa promover o desenvolvimento de jogos e aplicações interativas contemplando noções de computação, arte e cultura a partir dos aspectos teóricos e práticos explorados em seus componentes curriculares.";
 
@@ -77,7 +76,7 @@ function templateS() {
   title.textContent = "SISTEMAS";
   title.style.color = "#1C1759";
   selected.style.backgroundColor = "#1C1759";
-  owl.src = "../images/trails/coruja_sistemas.png";
+  document.querySelector("body").style.backgroundImage = `url("../images/trails/bg-4.png")`;
 
   description.textContent = "Essa trilha tem como objetivo tornar os alunos capazes de analisar, projetar, implementar, testar, implantar, avaliar e manter sistemas computacionais! Com esses conhecimentos, é possível representar sistemas de forma múltipla, como por meio de imagens, vídeos e sons.";
 

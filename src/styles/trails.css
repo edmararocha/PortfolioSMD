@@ -122,11 +122,7 @@
         padding-right: 2vw;
     }
 
-    .img-owl-content {
-        margin-top: 2vw;
-        margin-left: 2vw;
-        height: 85vh;
-    }
+
 
     #iframe-content {
         margin-top: 1vw;
@@ -186,14 +182,6 @@
         justify-content: center;
         padding: 0 4.5vw 0 4.5vw;
         border-radius: 2.5vw 2.5vw 0 0;
-    }
-
-
-    .img-owl-content {
-        margin-top: 10vw;
-        margin-left: 48vw;
-        height: 20vh;
-        width: 45vw;
     }
 
     .img-content {
