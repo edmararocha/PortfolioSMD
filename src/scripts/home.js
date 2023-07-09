@@ -79,6 +79,7 @@ window.addEventListener("DOMContentLoaded",()=> {
   
     if (!animationExecuted && window.scrollY >= scrollableHeight * 0.7 && window.scrollY <= scrollableHeight * 0.8) {
       runAnimation();
+      // scrollDiv(cachorro_div, 0);
     }
   });
 });
@@ -91,14 +92,15 @@ function voltareScrollar() {
 
 var arrow_button1 = document.querySelector('#botaoscrollprabaixo')
 var floating_text1 = document.querySelector('#floating-text1')
+var cachorro_div = document.querySelector('.frame-cachorro')
 
 arrow_button1.onclick = () => {
-  scrollDiv(floating_text1);
+  scrollDiv(floating_text1, 80);
 }
 
-function scrollDiv(div) {
+function scrollDiv(div, offset) {
   
-  const offset = 80; // Valor em pixels antes da div
+  // const offset = 80; // Valor em pixels antes da div
 
   const topPosition = div.offsetTop - offset;
   window.scrollTo({
