@@ -16,6 +16,15 @@ html {
 }
 
 @media (max-width: 599px) {
+    .main-container {
+        background-image: url(../images/main_bg_mobile.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        
+    
+    }
+
     .grid {
         margin-left: 5vw;
         min-height: 392vw;
@@ -145,9 +154,105 @@ html {
     #arrow {
         display: none;
     }
+
+    .frame { /* coruja */
+        position: absolute;
+        margin-left: -6vw;
+        margin-top: -6vw;
+        width: 20vw;
+        height: 20vw;
+        opacity: 0;
+    }
+
+    #corujacol4row29 {
+        z-index: 8;
+        grid-column-start: 6;
+        grid-row-start: 32;
+        margin-top: -40.8vw;
+        margin-left: -3.1vw;
+        width: 20vw;
+        height: 20vw;
+        /* background-image: url(../images/home/owl_frames/coruja1.png); */
+        background-size: contain;
+        transition: opacity 0.5s;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* opacity: 1; */
+        /* transition: width 0.3s, height 0.3s, margin-top 0.3s, margin-left 0.3s; */
+    }
+
+    #botaotrilhas {
+        /* margin-left: 3vw; */
+        z-index: 990;
+        width: 20vw;
+        height: 20vw;
+        background-color: transparent;
+        
+    
+    }
+
+    #cachorrocol8row33 {
+        grid-column-start: 4;
+        grid-row-start: 32;
+        margin-top: -6vw;
+        margin-left: -6vw;
+        width: 22vw;
+        height: 22vw;
+        background-color: transparent;
+        
+    }
+
+    #botaoprojetos {
+        z-index: 989;
+        width: 22vw;
+        height: 22vw;
+        background-color: transparent;
+    }
+
+    .frame-cachorro {
+        position: absolute;
+        margin-left: -5.4vw;
+        margin-top: -5.4vw;
+        width: 22vw;
+        height: 22vw;
+        opacity: 0;
+    }
+
+    #botaoegressos {
+        width: 10.52vw;
+        height: 21.93vw;
+        background-image: url(../images/frog_graduates.png);
+        background-size: contain;
+        background-color: transparent;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-image 0.25s ease;
+    }
+
+    #sapocol10row31 {
+        grid-column-start: 11;
+        grid-row-start: 32;
+        margin-left: 0.4vw;
+        margin-top: 2.5vw;
+        width: 10.52vw;
+        height: 21.93vw;
+    }
+
+
+    
 }
 
 @media (min-width: 600px) {
+    .main-container {
+        background-image: url(../images/main_bg.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        
+    
+    }
+
     .balloon {
         /* position: relative; */
         grid-column-start: 5;
@@ -276,23 +381,94 @@ html {
         grid-row-end: 4;
         margin-top: 6.8vw;
         margin-left: 1.1vw;
-    
-    
-    
-        /*REVISAR ESSE MARGIN*/
+     /*REVISAR ESSE MARGIN*/
     }
+
+    #botaotrilhas {
+        /* margin-left: 3vw; */
+        z-index: 990;
+        width: 11.98vw;
+        height: 11.98vw;
+        background-color: transparent;   
+    }
+
+    .frame{ /*coruja*/
+        position: absolute;
+        margin-left: -6vw;
+        margin-top: -6vw;
+        width: 11.98vw;
+        height: 11.98vw;
+        opacity: 0;
+    }
+
+    #corujacol4row29 {
+        z-index: 8;
+        grid-column-start: 5;
+        grid-row-start: 30;
+        margin-left: .8vw;
+        margin-top: -1.3vw;
+        width: 11.98vw;
+        height: 11.98vw;
+        
+    }
+
+    #cachorrocol8row33 {
+        grid-column-start: 4;
+        grid-row-start: 32;
+        /* margin-top: vw; */
+        margin-left: -5vw;
+        width: 10.52vw;
+        height: 10.52vw;
+        background-color: transparent;
+    }
+    
+    #botaoprojetos {
+        z-index: 989;
+        width: 10.52vw;
+        height: 10.52vw;
+        background-color: transparent;
+    }
+
+    .frame-cachorro{
+        position: absolute;
+        margin-left: -5.4vw;
+        margin-top: -5.4vw;
+        width: 10.52vw;
+        height: 10.52vw;
+        opacity: 0;
+    }
+
+    #botaoegressos {
+        width: 3.98vw;
+        height: 5.72vw;
+        background-color: transparent;
+    }
+
+    #botaoegressos {
+        width: 5.83vw;
+        height: 12.08vw;
+        background-image: url("../images/frog_graduates.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-image 0.25s ease;
+    }
+    
+
+    #sapocol10row31 {
+        grid-column-start: 8;
+        grid-row-start: 32;
+        margin-left: -2.2vw;
+        margin-top: -2vw;
+        width: 6.28vw;
+        height: 10.67vw;
+    }
+
 }
 
 /*1920px = 98vw
 SEMPRE USAR VW, usando calc de regra de 3*/
-.main-container {
-    background-image: url(../images/main_bg.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-    
 
-}
 body{
     background-color: var(--green);
 }
@@ -509,54 +685,11 @@ align-items: center;*/
 
 
 
-#botaotrilhas {
-    /* margin-left: 3vw; */
-    z-index: 990;
-    width: 11.98vw;
-    height: 11.98vw;
-    background-color: transparent;
-    
-
-}
 
 
-#corujacol4row29 {
-    z-index: 8;
-    grid-column-start: 5;
-    grid-row-start: 30;
-    margin-left: .8vw;
-    margin-top: -2.4vw;
-    width: 11.98vw;
-    height: 11.98vw;
-    /* background-image: url("../images/home/owl_frames/coruja1.png"); */
-    background-size: contain;
-    transition: opacity 0.5s;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    /* opacity: 1; */
-    /* transition: width 0.3s, height 0.3s, margin-top 0.3s, margin-left 0.3s; */
 
-    /* &:hover {
-        
-        animation-name: coruja;
-        animation-duration: 0.3s;
-        
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-        
 
-    } */
-}
-
-.frame{
-    position: absolute;
-    margin-left: -6vw;
-    margin-top: -6vw;
-    width: 11.98vw;
-    height: 11.98vw;
-    opacity: 0;
-}
 
 .frame.visible {
     opacity: 1;
@@ -703,50 +836,13 @@ align-items: center;*/
 }
 
 
-#botaoegressos {
-    width: 3.98vw;
-    height: 5.72vw;
-    background-color: transparent;
-}
 
-#cachorrocol8row33 {
-    grid-column-start: 4;
-    grid-row-start: 32;
-    margin-top: -1vw;
-    margin-left: -5vw;
-    width: 10.52vw;
-    height: 10.52vw;
-    background-color: transparent;
-    /* background-image: url("../images/home/dog_frames/cachorro1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: background-image 0.3s ease; */
 
-    &:hover{
-        animation-name: cachorro;
-        animation-duration: 0.4s;
-        animation-timing-function: ease;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-}
 
-#botaoprojetos {
-    z-index: 989;
-    width: 10.52vw;
-    height: 10.52vw;
-    background-color: transparent;
-}
 
-.frame-cachorro{
-    position: absolute;
-    margin-left: -5.4vw;
-    margin-top: -5.4vw;
-    width: 10.52vw;
-    height: 10.52vw;
-    opacity: 0;
-}
+
+
+
 
 .frame-cachorro.visible {
     opacity: 1;
@@ -754,24 +850,8 @@ align-items: center;*/
 
 
 
-#sapocol10row31 {
-    grid-column-start: 8;
-    grid-row-start: 32;
-    margin-left: -2.2vw;
-    margin-top: -3vw;
-    width: 6.28vw;
-    height: 10.67vw;
-}
 
-#botaoegressos {
-    width: 5.83vw;
-    height: 12.08vw;
-    background-image: url("../images/frog_graduates.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: background-image 0.25s ease;
-}
+
 
 
 
