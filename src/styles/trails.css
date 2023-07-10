@@ -151,7 +151,7 @@
     }
 
     .content {
-        margin: 0;
+        margin-top: 55vw;
         width: 100vw;
         display: flex;
         flex-direction: column-reverse;
