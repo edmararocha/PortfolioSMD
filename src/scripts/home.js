@@ -70,9 +70,11 @@ function voltareScrollar() {
 }
 
 
-var arrow_button1 = document.querySelector('#botaoscrollprabaixo')
-var floating_text1 = document.querySelector('#floating-text1')
-var cachorro_div = document.querySelector('.frame-cachorro')
+let arrow_button1 = document.querySelector('#botaoscrollprabaixo')
+let floating_text1 = document.querySelector('#floating-text1')
+let floating_text2 = document.querySelector('#floating-text2')
+let floating_text3 = document.querySelector('#floating-text3')
+let cachorro_div = document.querySelector('.frame-cachorro')
 
 arrow_button1.onclick = () => {
   scrollDiv(floating_text1, 80);

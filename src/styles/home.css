@@ -446,10 +446,43 @@ html {
         height: 6.42vw;
         grid-column-end: 6;
         grid-row-start: 3;
-        grid-row-end: 4;
+        /* grid-row-end: 4; */
         margin-top: 6.8vw;
         margin-left: 1.1vw;
      /*REVISAR ESSE MARGIN*/
+    }
+
+    #arrow2 {
+        grid-column-start: 6;
+        width: 6.02vw;
+        height: 6.42vw;
+        grid-column-end: 6;
+        grid-row-start: 9;
+        /* grid-row-end: 4; */
+        /* margin-top: 4.8vw; */
+        margin-left: 1.1vw;
+    }
+
+    #arrow3 {
+        grid-column-start: 6;
+        width: 6.02vw;
+        height: 6.42vw;
+        /* grid-column-end: 6; */
+        grid-row-start: 14;
+        /* grid-row-end: 4; */
+        margin-top: -4.8vw;
+        margin-left: 1.1vw;
+    }
+
+    #arrow4 {
+        grid-column-start: 6;
+        width: 6.02vw;
+        height: 6.42vw;
+        /* grid-column-end: 6; */
+        grid-row-start: 18;
+        /* grid-row-end: 4; */
+        margin-top: -4.8vw;
+        margin-left: 1.1vw;
     }
 
     #botaotrilhas {
