@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded",()=> {
     const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
   
   
-    if (!animationExecuted && window.scrollY >= scrollableHeight * 0.55 && window.scrollY <= scrollableHeight * 0.59) {
+    if (!animationExecuted && window.scrollY >= scrollableHeight * 0.50 && window.scrollY <= scrollableHeight * 0.55) {
       runAnimation();
       // scrollDiv(cachorro_div, 0);
     }

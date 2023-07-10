@@ -1,10 +1,21 @@
 @keyframes meteoro-descida {
     0% {
-      top: -60vh;
+        opacity: 0;
+      /* top: -60vh; */
     }
+
+    20%{
+        opacity: 1;
+    }
+
+    80%{
+        opacity: 0;
+    }
+
     100% {
-      top: 100vw; /* Define a posição final do meteoro no fim da tela */
-      opacity: 0; /* Define a opacidade do meteoro para desaparecer */
+        opacity: 0;
+      top: 410vw; /* Define a posição final do meteoro no fim da tela */
+       /* Define a opacidade do meteoro para desaparecer */
     }
   }
 
@@ -30,7 +41,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 240vw;
+    top: 90vw;
     background-image: url("../images/home/meteor_frames/audiovisual_apng.png");
 }
 
@@ -41,7 +52,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 233.96vw;
+    top: 83.96vw;
     left: 32.19vw;
     background-image: url("../images/home/meteor_frames/design_apng.png");
 }
@@ -54,7 +65,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 233.96vw;
+    top: 83.96vw;
     left: 54.38vw;
     background-image: url("../images/home/meteor_frames/jogos_apng.png");
 }
@@ -67,16 +78,17 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 0;
+    top: 90vw;
     left: 76.61vw;
     background-image: url("../images/home/meteor_frames/sistemas_apng.png");
 }
 
 .meteor.animated{
+    z-index: 11;
     display: block;
-    position: fixed;
+    /* position: fixed; */
     animation-name: meteoro-descida;
-    animation-duration: 6s;
+    animation-duration: 7.8s;
     animation-fill-mode: forwards;
 }
 

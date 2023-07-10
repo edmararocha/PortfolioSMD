@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded",()=> {
       const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
     
     
-      if (window.scrollY >= scrollableHeight * 0.35 && window.scrollY <= scrollableHeight * 0.40) {
+      if (window.scrollY >= scrollableHeight * 0.22 && window.scrollY <= scrollableHeight * 0.26) {
         for(let i = 0; i<meteoro.length; i++){meteoro[i].classList.add('animated');}
         animacaoExecutada = true;
       }
@@ -22,9 +22,17 @@ window.addEventListener("DOMContentLoaded",()=> {
 
 // Verifica a animação inicialmente ao carregar a página
 // verificaAnimacao();
+document.addEventListener('scroll', () => {
+    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+  
+  
+    if (window.scrollY >= scrollableHeight * 0.72 && window.scrollY <= scrollableHeight * 0.76) {
+        console.log("animacao acabou")
+        for(let i = 0; i<meteoro.length; i++){meteoro[i].style.display = 'none';} // Oculta o meteoro após a animação
+        brilho.classList.add('animated'); // Adiciona a classe para ativar a animação do brilho
+    }
+  });
 
-meteoro[0].addEventListener('animationend', () => {
-    console.log("animacao acabou")
-    for(let i = 0; i<meteoro.length; i++){meteoro[i].style.display = 'none';} // Oculta o meteoro após a animação
-    brilho.classList.add('animated'); // Adiciona a classe para ativar a animação do brilho
-});
+brilho.addEventListener('animationend', () =>{
+    brilho.style.display = 'none';
+})
