@@ -27,3 +27,6 @@ No momento atual estamos fazendo a parte Front-End do projeto e passando as tela
 
 19/06/2023
 As primeiras animações já foram implementadas e todas as telas já estão inclusas no site, algumas telas ainda precisam de polimento mas o projeto já está bem encaminhado. Os próximos passos serão a conclusão das animações e a responsividade do site.
+
+10/07/2023
+A ultima entrega relacionada à disciplina de Projeto 1 foi feita, as principais animações do site já foram adicionadas, além de que todas as telas foram concluidas. A responsividade para dispositivos móveis com tela vertical já foi implementada. Os próximos passos serão adicionar mais projetos, egressos e implementar responsividade para dispositivos com tela 3:4.
