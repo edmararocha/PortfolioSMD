@@ -15,12 +15,11 @@ Mostrar e descrever as quatro trilhas do curso.
 ### Egressos:
 Mostrar alguns egressos do curso, as profissões que eles exercem hoje em dia e onde eles estão morando.
 
-## O site é um Portfolio para o curso de Sistemas e Mídias Digitais, possui uma estrutura não convencional e atrativa para o público alvo do smd.
+## O site é um Portfolio para o curso de Sistemas e Mídias Digitais, possui uma estrutura não convencional e atrativa para o público alvo.
 ![alt text](https://i.imgur.com/cD0zU1N.png)
 
-As tecnologias utilizadas são HTML5, CSS3, JavaScript, o framework p5.js para implementar animações e o Figma para prototipação de interfaces.
+As tecnologias utilizadas são HTML5, CSS3, JavaScript e o Figma para prototipação de interfaces.
 
-As funções a serem implementadas no futuro são: filtragem de projetos por trilha e animações em p5.js. 
 
 26/05/2023
 No momento atual estamos fazendo a parte Front-End do projeto e passando as telas do Figma para o HTML
