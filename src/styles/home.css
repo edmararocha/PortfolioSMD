@@ -6,7 +6,7 @@
 
 html {
     --grey: #404040;
-    --green: #446958;
+    --green: #345E2F;
     /* 1rem = 16px (User Agent) = 100% (User Agent) */
     /* 10px */
     scroll-behavior: smooth;
@@ -488,14 +488,14 @@ html {
     #botaotrilhas {
         /* margin-left: 3vw; */
         z-index: 990;
-        width: 11.98vw;
-        height: 11.98vw;
+        width: 14.98vw;
+        height: 16.98vw;
         background-color: transparent;   
     }
 
     .frame{ /*coruja*/
         position: absolute;
-        margin-left: -6vw;
+        margin-left: -7.9vw;
         margin-top: -6vw;
         width: 11.98vw;
         height: 11.98vw;
@@ -507,69 +507,66 @@ html {
         grid-column-start: 5;
         grid-row-start: 31;
         margin-left: .8vw;
-        margin-top: -8.5vw;
+        margin-top: -16.1vw;
         width: 11.98vw;
         height: 11.98vw;
         
     }
 
     #cachorrocol8row33 {
+        z-index: 989;
         grid-column-start: 4;
         grid-row-start: 32;
-        margin-top: 1.5vw;
-        margin-left: -5.4vw;
+        margin-top: -7.8vw;
+        margin-left: -4.8vw;
         width: 10.52vw;
         height: 10.52vw;
         background-color: transparent;
-    }
+      }
     
     #botaoprojetos {
-        z-index: 989;
-        width: 10.52vw;
-        height: 10.52vw;
+        width: 16.52vw;
+        height: 15.52vw;
         background-color: transparent;
     }
 
     .frame-cachorro{
         position: absolute;
-        margin-left: -5.4vw;
-        margin-top: -5.4vw;
+        margin-left: -8.9vw;
+        margin-top: -3.9vw;
         width: 10.52vw;
         height: 10.52vw;
         opacity: 0;
     }
 
     #botaoegressos {
-        width: 9.32vw;
-        height: 14.32vw;
+        width: 16.32vw;
+        height: 19.32vw;
         background-color: transparent;
         margin-left: -2vw;
-        /* background-image: url("../images/frog_graduates.png"); */
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
         transition: background-image 0.25s ease;
-    }
+      }
 
     
 
     #sapocol10row31 {
+        z-index: 989;
         grid-column-start: 8;
         grid-row-start: 32;
         margin-left: -3.3vw;
-        margin-top: -0.2vw;
+        margin-top: -8.6vw;
         width: 14.32vw;
         height: 14.32vw;
-    }
+      }
 
-    .frame-sapo{
+      .frame-sapo {
         position: absolute;
-        margin-left: -7.1vw;
-        margin-top: -8.4vw;
+        margin-left: -10.5vw;
+        margin-top: -7.9vw;
         width: 14.32vw;
         height: 14.32vw;
         opacity: 0;
-    }
+      }
 
     .ellipsis-text.projects {
         width: 8.18vw;
@@ -585,7 +582,9 @@ html {
         grid-column-start: 4;
         grid-row-start: 32;
         margin-left: 2vw;
-        margin-top: -2vw;
+        margin-top: -7vw;
+        height: 5vw;
+        width: 9vw;
     }
     
     .ellipsis-text.trails {
@@ -601,8 +600,10 @@ html {
         grid-column-start: 7;
         grid-row-start: 31;
         margin-left: -4.6vw;
-        margin-top: -10.5vw;
-    }
+        margin-top: -15.5vw;
+        height: 5vw;
+        width: 7vw;
+      }
     
     .ellipsis-text.graduates {
         width: 8.39vw;
@@ -615,7 +616,7 @@ html {
     .frog_text {
         grid-column-start: 8;
         grid-row-start: 32;
-        margin-top: -4vw;
+        margin-top: -9vw;
         margin-left: 2vw;
     }
     
