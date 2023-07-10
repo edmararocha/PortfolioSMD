@@ -1,0 +1,107 @@
+@keyframes meteoro-descida {
+    0% {
+      top: -60vh;
+    }
+    100% {
+      top: 100vw; /* Define a posição final do meteoro no fim da tela */
+      opacity: 0; /* Define a opacidade do meteoro para desaparecer */
+    }
+  }
+
+  @keyframes brilho-aparecer {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        display: none;
+    }
+  }
+
+.meteor_audio{
+    display: none;
+
+    width: 13.33vw;
+    height: 28.91vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 240vw;
+    background-image: url("../images/home/meteor_frames/audiovisual_apng.png");
+}
+
+.meteor_design{
+    display: none;
+    width: 13.33vw;
+    height: 28.91vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 233.96vw;
+    left: 32.19vw;
+    background-image: url("../images/home/meteor_frames/design_apng.png");
+}
+
+.meteor_jogos{
+    display: none;
+
+    width: 13.33vw;
+    height: 28.91vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 233.96vw;
+    left: 54.38vw;
+    background-image: url("../images/home/meteor_frames/jogos_apng.png");
+}
+
+.meteor_sistemas{
+    display: none;
+
+    width: 13.33vw;
+    height: 28.91vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 76.61vw;
+    background-image: url("../images/home/meteor_frames/sistemas_apng.png");
+}
+
+.meteor.animated{
+    display: block;
+    position: fixed;
+    animation-name: meteoro-descida;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.brilho {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Cor do brilho */
+    opacity: 0;
+  }
+
+  .brilho.animated {
+    z-index: 1000;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Cor do brilho */
+    opacity: 0;
+    animation: brilho-aparecer 2s linear forwards;
+  }
