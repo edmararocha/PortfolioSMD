@@ -33,28 +33,29 @@ if (project) {
         demoElement = document.createElement("iframe");
         demoElement.frameBorder = "0";
     } else if (isPDFUrl(project['demoUrl'])) {
-        demoElement = document.createElement("div");
+        demoElement = document.createElement("object");
         demoElement.id = "pdf-viewer";
+        demoElement.data = project['demoUrl'];
+        demoElement.type = "application/pdf";
 
-        PDFJS.getDocument(project['demoUrl']).promise.then(function (pdf) {
-            var pageNumber = 1;
+        // PDFJS.getDocument(project['demoUrl']).promise.then(function (pdf) {
+        //     var pageNumber = 1;
 
-            pdf.getPage(pageNumber).then(function (page) {
-                var viewport = page.getViewport({ scale: 1.0 });
-                var canvas = document.createElement('canvas');
-                var context = canvas.getContext('2d');
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
+        //     pdf.getPage(pageNumber).then(function (page) {
+        //         var viewport = page.getViewport({ scale: 1.0 });
+        //         var canvas = document.createElement('canvas');
+        //         var context = canvas.getContext('2d');
+        //         canvas.height = viewport.height;
+        //         canvas.width = viewport.width;
 
-                container.appendChild(canvas);
+        //         container.appendChild(canvas);
 
-                page.render({
-                    canvasContext: context,
-                    viewport: viewport
-                });
-            });
-        });
-        Ce
+        //         page.render({
+        //             canvasContext: context,
+        //             viewport: viewport
+        //         });
+        //     });
+        // });
     } else {
         demoElement = document.createElement("img");
     }
