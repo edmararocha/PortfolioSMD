@@ -160,14 +160,17 @@ main {
     }
 
     .form-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin-top: 8vh;
-        width: 80vw;
+        width: 90vw;
     }
 
     .field-item {
         display: flex;
         flex-direction: column;
-        width: 80vw;
+        width: 90vw;
         margin-bottom: 8vw;
     }
 
@@ -190,7 +193,7 @@ main {
 
     .message-content {
         margin-top: 4vw;
-        width: 80vw;
+        width: 90vw;
         height: 40vh;
         border-radius: 1vw;
         border: none;
@@ -241,7 +244,7 @@ main {
 
     .footer-message button {
         display: inline-block;
-        padding: 4vw 2vw 4vw 2vw;
+        padding: 5vw 2vw 4vw 2vw;
         background-image: url("../images/button_bg.png");
         background-repeat: no-repeat;
         background-position: center center;

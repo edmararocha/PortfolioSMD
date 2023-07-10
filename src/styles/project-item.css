@@ -87,6 +87,11 @@ body {
         column-gap: 20px;
     }
 
+    #pdf-viewer {
+        width: 100%;
+        height: 600px;
+    }
+
 }
 
 @media (max-width: 599px) {
@@ -161,5 +166,10 @@ body {
 
     #description {
         margin-top: 4vw;
+    }
+
+    #pdf-viewer {
+        width: 100%;
+        height: 600px;
     }
 }
