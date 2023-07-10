@@ -15,7 +15,7 @@ Mostrar e descrever as quatro trilhas do curso.
 ### Egressos:
 Mostrar alguns egressos do curso, as profissões que eles exercem hoje em dia e onde eles estão morando.
 
-## O site terá uma tela principal que será uma onepage; um grande cenário que contará uma história.
+## O site é um Portfolio para o curso de Sistemas e Mídias Digitais, possui uma estrutura não convencional e atrativa para o público alvo do smd.
 ![alt text](https://i.imgur.com/cD0zU1N.png)
 
 As tecnologias utilizadas são HTML5, CSS3, JavaScript, o framework p5.js para implementar animações e o Figma para prototipação de interfaces.
