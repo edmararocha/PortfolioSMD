@@ -1,9 +1,4 @@
-body {
-    background-image: url(../images/about-bg.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    fill: rgba(64, 63, 82, 0.50);
-}
+
 
 li,
 h1,
@@ -24,6 +19,14 @@ main {
 }
 
 @media (min-width: 600px) {
+    body {
+        background-image: url(../images/about-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        fill: rgba(64, 63, 82, 0.50);
+    }
+    
     p {
         margin-top: 2vw;
     }
@@ -101,6 +104,13 @@ main {
 }
 
 @media (max-width: 599px) {
+    body {
+        background-image: url(../images/about-bg-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        fill: rgba(64, 63, 82, 0.50);
+    }
+
     * {
         font-size: large;
     }
