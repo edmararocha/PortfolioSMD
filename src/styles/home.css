@@ -507,7 +507,7 @@ html {
         grid-column-start: 5;
         grid-row-start: 31;
         margin-left: .8vw;
-        margin-top: -8.9vw;
+        margin-top: -8.5vw;
         width: 11.98vw;
         height: 11.98vw;
         
@@ -516,7 +516,7 @@ html {
     #cachorrocol8row33 {
         grid-column-start: 4;
         grid-row-start: 32;
-        margin-top: -.2vw;
+        margin-top: 1.5vw;
         margin-left: -5.4vw;
         width: 10.52vw;
         height: 10.52vw;
@@ -557,7 +557,7 @@ html {
         grid-column-start: 8;
         grid-row-start: 32;
         margin-left: -3.3vw;
-        margin-top: -0.9vw;
+        margin-top: -0.2vw;
         width: 14.32vw;
         height: 14.32vw;
     }
@@ -585,7 +585,7 @@ html {
         grid-column-start: 4;
         grid-row-start: 32;
         margin-left: 2vw;
-        margin-top: -4vw;
+        margin-top: -2vw;
     }
     
     .ellipsis-text.trails {
@@ -601,7 +601,7 @@ html {
         grid-column-start: 7;
         grid-row-start: 31;
         margin-left: -4.6vw;
-        margin-top: -12.5vw;
+        margin-top: -10.5vw;
     }
     
     .ellipsis-text.graduates {
@@ -615,7 +615,7 @@ html {
     .frog_text {
         grid-column-start: 8;
         grid-row-start: 32;
-        margin-top: -6vw;
+        margin-top: -4vw;
         margin-left: 2vw;
     }
     
