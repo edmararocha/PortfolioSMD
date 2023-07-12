@@ -156,7 +156,7 @@ html {
         font-weight: 500;
     }
 
-    #arrow {
+    #arrow, #arrow2, #arrow3, #arrow4 {
         display: none;
     }
 
