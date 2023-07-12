@@ -52,7 +52,7 @@ function templateD() {
   selected.style.backgroundColor = "#D1302D";
   document.querySelector("body").style.backgroundImage = `url("../images/trails/bg-2.png")`;
 
-  trailDescription.style.overflow = "auto";
+  trailDescription.style.overflowY = "auto";
   
   description.textContent = "A trilha de design digital engloba conhecimentos teóricos e práticos do Design e do desenvolvimento de tecnologias digitais interativas adquiridos ao longo do curso de forma a estimular a visão crítica do aluno. Além disso, abrange questões de experiência do usuário e interatividade no design digital!";
 

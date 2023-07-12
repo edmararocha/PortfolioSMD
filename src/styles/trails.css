@@ -16,6 +16,8 @@
 
     .ballon-content {
         width: 38vw;
+        overflow-x: hidden;
+
         height: fit-content;
         background-color: white;
         border-radius: 1vw;
@@ -27,6 +29,7 @@
         width: 100%;
         list-style: none;
         display: flex;
+
         align-items: center;
         justify-content: center;
     }
@@ -85,35 +88,39 @@
         padding-left: 4vw;
         padding-right: 2vw;
         padding-bottom: 3vw;
+        overflow-x: hidden;
+
     }
 
     #trail-description {
         margin-top: 0.5vw;
         min-height: 20vw;
         max-height: 20vw;
-        overflow: auto;
+        overflow-x: hidden;
+
+        overflow-y: auto;
     }
 
     #trail-description::-webkit-scrollbar {
-        width: 8px;
+        width: 5px;
         /* largura da barra de rolagem */
     }
 
     #trail-description::-webkit-scrollbar-track {
         background: #f1f1f1;
-        border-radius: 8px;
+        border-radius: 5px;
         /* cor de fundo da pista */
     }
 
     #trail-description::-webkit-scrollbar-thumb {
         background: #441B4B;
-        border-radius: 8px;
+        border-radius: 5px;
         /* cor do botão de rolagem */
     }
 
     #trail-description::-webkit-scrollbar-thumb:hover {
         background: #555;
-        border-radius: 8px;
+        border-radius: 5px;
         /* cor do botão de rolagem quando hover */
     }
 
