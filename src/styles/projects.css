@@ -26,8 +26,7 @@ h1 {
 
     body{
         background-image: url(../images/projects_bg.png);
-        background-repeat: repeat-y;
-        background-repeat: repeat-x;
+        background-repeat: repeat;
     }
     #character-content {
         margin-left: 50.43vw;
@@ -171,7 +170,7 @@ h1 {
 
     body{
         background-image: url(../images/projects_bg_mobile.png);
-        background-repeat: repeat-y;
+        background-repeat: repeat;
     }
 
     main {
